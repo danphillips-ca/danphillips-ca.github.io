@@ -1,7 +1,7 @@
 Billy Rick:
   name        : "Dan Phillips"
-  bio         : "What do you want, jewels? I am a very extravagant man."
-  avatar      : "/assets/images/bio-photo-2.jpg"
+  bio         : "A librarian and data manager living his best life."
+  avatar      : "/assets/images/dan-profilephoto.png"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

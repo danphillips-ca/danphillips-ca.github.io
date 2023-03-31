@@ -35,6 +35,8 @@ github: [metadata]
 remote_theme: "mmistakes/minimal-mistakes@4.24.0" #theme commented out per https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+include: ["_pages"] #as directed by minimal mistakes theme documentation
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache
