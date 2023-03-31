@@ -1,10 +1,15 @@
 ---
 layout: posts
-title:  "Welcome to Jekyll!"
-date:   2023-03-30 15:44:34 -0300
-categories: jekyll update
+title:  "Hello World"
+date:   2023-03-31 15:00:00 -0300
+categories: Site Migration
+author: Dan Phillips
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+This is my first post to use as a template for migrating my blog from [WordPress][WordPress-link] on Bluehost to [Jekyll][Jekyll-link] on GitHub Pages. The links in this paragraph largely exist to remind myself how to make them in this markdarkdown iteration.
+
+At present, the theme is "minimal-mistakes-jekyll" which I was only able to get working with GitHubs Pages by using a remote theme addon. The direct theme works well locally -- so if I ever need to migrate and build elsewhere, it should be easy enough.
+
+Here's some of the guidance in the default blog post that I might find handy later:
 
 Jekyll requires blog post files to be named according to the following format:
 
@@ -27,3 +32,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
+
+[WordPress-link]: https://www.wordpress.org
+[Jekyll-link]: https://www.jekyllrb.com
