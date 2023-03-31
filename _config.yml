@@ -30,9 +30,11 @@ github: [metadata]
 
 # Build settings
 # theme: minima
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" #theme commented out per https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
