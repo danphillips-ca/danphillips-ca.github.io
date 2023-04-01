@@ -19,7 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: My name is Dan
-subtitle: I am migrating from WordPress to Jekyll.
+subtitle: "I am in the process of migrating from WordPress to Jekyll."
+name: "Dan Phillips"
 email: dan@danphillips.ca
 description: >- # this means to ignore newlines until "baseurl:"
   This site is my portfolio and blog.
@@ -34,8 +35,6 @@ github: [metadata]
 # theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.24.0" #theme commented out per https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
 minimal_mistakes_skin: "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-include: ["_pages"] #as directed by minimal mistakes theme documentation
 
 plugins:
   - jekyll-feed
@@ -60,3 +59,28 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+#
+# Here's a bunch of theme default things that I've added.
+# Search by Lunr, Algoria, or Google Site search is available.
+# Analytics are available.
+# Disqus comments (and more) are available. See email dated 2023-03-31
+# because they have activated a free plus account for me.
+#
+
+include: ["_pages"] #as directed by minimal mistakes theme documentation
+teaser: /assets/images/default-teaser-500x300.png #theme default teaser image
+
+atom_feed:
+  hide: true
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      date_format: "%Y-%m-%d"
