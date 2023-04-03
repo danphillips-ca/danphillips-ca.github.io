@@ -1,4 +1,6 @@
 main:
+  - title: "CV"
+    url: /vita/
   - title: "About"
     url: /about/
   - title: "The Old Site"
