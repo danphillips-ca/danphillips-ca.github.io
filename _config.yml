@@ -89,13 +89,15 @@ defaults:
 # Footer links
 footer:
   links:
+    - label: "BY-NC Dan Phillips"
+      icon: "fab fa-brands fa-creative-commons"
+      url: "https://creativecommons.org/licenses/by-nc/4.0/"
+    - label: "0000-0002-0386-0132"
+      icon: "fab fa-brands fa-orcid"
+      url: "https://orcid.org/my-orcid?orcid=0000-0002-0386-0132"
     - label: "LinkedIn"
       icon: "fab fa-brands fa-linkedin"
       url: "https://linkedin.com/in/danphillips-info"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/danphillips-ca"
-  links2:
-    - label: "Glossary"
-      icon: "fab fa-duotone fa-open-book-reader"
-      url: "/glossary/"
