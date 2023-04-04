@@ -85,6 +85,11 @@ defaults:
       show_date: true
       date_format: "%Y-%m-%d"
 
+# Collections
+collections_dir: my_collections
+collections:
+  - musings
+  - journal
 
 # Footer links
 footer:
@@ -98,6 +103,4 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-brands fa-linkedin"
       url: "https://linkedin.com/in/danphillips-info"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/danphillips-ca"
+
