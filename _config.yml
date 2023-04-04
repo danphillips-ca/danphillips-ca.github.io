@@ -99,7 +99,7 @@ footer:
       url: "https://creativecommons.org/licenses/by-nc/4.0/"
     - label: "0000-0002-0386-0132"
       icon: "fab fa-brands fa-orcid"
-      url: "https://orcid.org/my-orcid?orcid=0000-0002-0386-0132"
+      url: "https://orcid.org/0000-0002-0386-0132"
     - label: "LinkedIn"
       icon: "fab fa-brands fa-linkedin"
       url: "https://linkedin.com/in/danphillips-info"
