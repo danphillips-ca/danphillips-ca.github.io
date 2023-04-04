@@ -86,7 +86,7 @@ defaults:
       date_format: "%Y-%m-%d"
 
 # Collections
-collections_dir: my_collections
+collections_dir: all_collections
 collections:
   - musings
   - journal
