@@ -84,3 +84,18 @@ defaults:
     values:
       show_date: true
       date_format: "%Y-%m-%d"
+
+
+# Footer links
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-brands fa-linkedin"
+      url: "https://linkedin.com/in/danphillips-info"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/danphillips-ca"
+  links2:
+    - label: "Glossary"
+      icon: "fab fa-duotone fa-open-book-reader"
+      url: "/glossary/"
