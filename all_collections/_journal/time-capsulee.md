@@ -1,9 +1,10 @@
 ---
 layout: posts
 title:  "Time Capsule"
-date:   0000-00-00 00:00:00 -0300
+date:   2023-04-04 00:00:00 -0300
 categories: journal
 author: Dan Phillips
+excerpt: "We can save more than daylight when we **Spring Ahead**."
 ---
 
 

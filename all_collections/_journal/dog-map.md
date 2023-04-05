@@ -1,9 +1,10 @@
 ---
 layout: posts
-title:  "Geospatial Data for RLOS"
-date:   0000-00-00 00:00:00 -0300
+title:  "Radial Line of Sight and Dogs"
+date:   2023-04-04 00:00:00 -0300
 categories: journal
 author: Dan Phillips
+excerpt: "In Saskatchewan, there's nothing to do but watch your dog run away for three days. Can that be true?"
 ---
 
 This was a fun little poster project to make use of a Radial Line of Sight package in Esri ArcMaps.

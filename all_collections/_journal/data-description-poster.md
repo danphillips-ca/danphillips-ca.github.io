@@ -1,9 +1,10 @@
 ---
 layout: posts
 title:  "A (good) Data Description"
-date:   0000-00-00 00:00:00 -0300
+date:   2023-04-04 00:00:00 -0300
 categories: journal
 author: Dan Phillips
+excerpt: "Resources from a poster presentation with the Research Data Alliance in 2021."
 ---
 
 Resources from a poster presentation with the Research Data Alliance in 2021.

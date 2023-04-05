@@ -1,9 +1,13 @@
 ---
 layout: posts
 title:  "Towards Best Practices"
-date:   0000-00-00 00:00:00 -0300
+date:   2023-04-04 00:00:00 -0300
 categories: journal
 author: Dan Phillips
+image: /assets/images/default-teaser-500x300px.png
+teaser: /assets/images/default-teaser-500x300px.png
+excerpt: "A publication in ASIS&T that I co-authored in 2021 about creating effective longform summaries in environmental data repositories."
+toc: true
 ---
 
 ## Abstract
