@@ -65,6 +65,7 @@ plugins:
 # Here's a bunch of theme default things that I've added.
 # Search by Lunr, Algoria, or Google Site search is available.
 # Analytics are available.
+#
 # Disqus comments (and more) are available. See email dated 2023-03-31
 # because they have activated a free plus account for me.
 #
@@ -107,6 +108,8 @@ collections_dir: all_collections
 collections:
   - musings
   - journal
+  - cheatsheets
+
 
 # Footer links
 footer:
