@@ -4,6 +4,10 @@ title: Curriculum Vitae
 permalink: /vita/
 ---
 
+
+
+
+
 # DAN PHILLIPS
 
 ## Contact

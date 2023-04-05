@@ -1,5 +1,11 @@
 main:
+  - title: "Musings"
+    url: /musings/
+  - title: "Journal"
+    url: /journal/
+  - title: "Values"
+    url: /values/
   - title: "CV"
     url: /vita/
-  - title: "My Stable WebSite"
-    url: https://danphillips.ca
+#  - title: "My Stable WebSite"
+#    url: https://danphillips.ca
