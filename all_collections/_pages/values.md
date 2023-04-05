@@ -6,6 +6,8 @@ excerpt: "aka the macroblog"
 
 ---
 
+![Dan and a very big fiddle](/assets/images/values.jpg)
+
 This page is my own personal mission and vision. It is a living document, intended to change as I reflect on my goals and hone my values.
 
 Building Capacity of Service

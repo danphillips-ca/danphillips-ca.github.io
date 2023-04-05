@@ -1,3 +1,14 @@
+---
+title: Glossary
+layout: collection
+permalink: /glossary/
+# collection: journal
+# entries_layout: grid
+# classes: wide
+excerpt: "aka the danctionary"
+---
+![A young Dan and his dog](/assets/images/glossary.jpg)
+
 Everyone use specialized words, acronyms, abbreviations, or initialisms that aren’t widely understood. Although I try not to, I’m guilty of this too.
 
 In late 2022, a friend asked me to provide a danctionary definition of a word I used without context. That inspired the creation of this glossary. It’s kind of like the Meaning of Liff, but with words from my own lexicon.

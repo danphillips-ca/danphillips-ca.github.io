@@ -103,13 +103,17 @@ defaults:
       - title: "Another Title"
         text: "More text here."
 
+
 # Collections
 collections_dir: all_collections
 collections:
-  - musings
-  - journal
-  - cheatsheets
-
+  musings:
+    output: false #no output needed if treated as a microblog with no links.
+  journal:
+    output: true
+    url: /:collection/:title
+  cheatsheets:
+    output: true
 
 # Footer links
 footer:
