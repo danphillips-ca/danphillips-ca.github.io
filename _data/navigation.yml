@@ -6,6 +6,25 @@ main:
   - title: "Values"
     url: /values/
   - title: "CV"
-    url: https://danphillips.ca/vita/
-#  - title: "My Stable WebSite"
-#    url: https://danphillips.ca
+    url: /vita/
+
+
+
+#To enable the footer menu, add the following to the site's _layouts/default.html file.
+#
+#{% if site.data.navigation.footer %}
+#  <nav class="footer-nav">
+#    {% include navigation.html navigation=site.data.navigation.footer %}
+#  </nav>
+#{% endif %}
+#
+#footer:
+#  - title: "Glossary"
+#      url: /glossary/
+#  - title: "Cheatsheets"
+#      url: /cheatsheets/
+#  - title: "Privacy"
+#      url: /privacy/
+#
+#
+#
