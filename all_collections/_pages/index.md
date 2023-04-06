@@ -1,5 +1,6 @@
 ---
-layout: single
+layout: single #home for posts listed under content.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: "My name is Dan"
 permalink: /
 #gallery:
