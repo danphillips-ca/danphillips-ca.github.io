@@ -86,24 +86,6 @@ defaults:
       show_date: true
       date_format: "%Y-%m-%d"
 
-# Sidebar
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      author_profile: true
-  
-      sidebar:
-      - title: "Title"
-        image: http://placehold.it/350x250
-        image_alt: "image"
-        text: "Some text here."
-      - title: "Another Title"
-        text: "More text here."
-
-
 # Collections
 collections_dir: all_collections
 collections:
