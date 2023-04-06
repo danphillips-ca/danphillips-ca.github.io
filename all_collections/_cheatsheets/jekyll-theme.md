@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "Ruby, Jekyll, and Theme"
 date:   2023-04-02 22:00:00 -0300
 categories: cheatsheets
