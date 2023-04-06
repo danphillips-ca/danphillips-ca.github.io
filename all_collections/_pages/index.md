@@ -2,6 +2,7 @@
 layout: single
 title: ""
 permalink: /
+classes: wide
 ---
 
 # My name is Dan.
