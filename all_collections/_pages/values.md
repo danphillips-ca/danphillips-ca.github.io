@@ -12,7 +12,8 @@ excerpt: "aka the macroblog"
 
 This page is my own personal mission and vision. It is a living document, intended to change as I reflect on my goals and hone my values.
 
-Building Capacity of Service
+## Building Capacity of Service
+
 The best way to serve is to ensure that those who are served are served sustainably; that they can help themselves and others going forward. It is possible to be dependable without being depended upon.
 
 I derive great personal value through my ability to assist people in achieving their goals. (Who doesn’t like to feel useful?) I also derive great personal value from helping others to feel that same satisfaction.
