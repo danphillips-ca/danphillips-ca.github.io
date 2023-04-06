@@ -1,14 +1,12 @@
 ---
 layout: single
-title:  "Of Dogs on Maps"
+title:  "Dogs on Maps"
 date:   2020-12-17 00:00:00 -0300
 categories: journal
 author: Dan Phillips
 excerpt: "Watch your dog run away for three days in Saskatchewan."
-teaser: /assets/images/poster.jpg
+teaser: https://lh3.googleusercontent.com/pw/AMWts8Ayp2enFsI-s_Yg-A_gUCHfacYpcoVaQ8S2tXMBfIn7Nlm5SQ2Ypky0pP62KdyybqK2yRQTaqUg1DXBCEkeWBLhEWv4FRQgdg35r7JAMQGcuKxEMSLiVRCkLFAA9B9a6pwqKImKcng3m3ZZ9NB6JW_OoQ=w617-h403-s-no?authuser=0
 ---
-
-<!-- I'm using this as my primary test journal entry -->
 
 This was a fun little poster project to make use of a Radial Line of Sight package in Esri ArcMaps.
 
@@ -16,6 +14,8 @@ This was a fun little poster project to make use of a Radial Line of Sight packa
 There is an old joke that says Saskatchewan is so flat, you can watch your dog run away for three days. I have a friend who lives in Saskatchewan and she has two dogs. Admittedly, she doesn’t live in the flattest part of Saskatchewan — but let’s see if the old addage applies anyway!
 
 Jess has two dogs: an Australian Shephard named Ocean, and a Lassie Collie named Tully. To get the best vantage, our starting point is the tallest hill in town. Three days is an awful long time, so let’s cut that down to just one hour.
+
+!["A map of an area in Saskatchewan showing two circles that represent the distance from the center that two respective dog breeds could reach within an hour. The circles are filled with grey and white areas, which the legend describes as "dog seen" (white) and "dog gone" (grey). The area is mostly grey."][DogMap]
 
 ### How far can these dogs run in an hour?
 Even the most determined doggo can’t run at full speed for a full hour, but let’s pretend these pups can run at full speed without needing to pause. (Paws?)
@@ -25,8 +25,6 @@ Even the most determined doggo can’t run at full speed for a full hour, but le
 
 #### **Ocean** the Aussie Shepherd | 48.8 km
   American Kennel Club reports that the fastest Australian Shepherd’s record is even faster at 30.3mph! (Canadianized, that is 48.8km/h.)
-
-<--!["A map of an area in Saskatchewan showing two circles that represent the distance from the center that two respective dog breeds could reach within an hour. The circles are filled with grey and white areas, which the legend describes as "dog seen" (white) and "dog gone" (grey). The area is mostly grey."][DogMap]-->
 
 Thanks to Jess and her family for photos of their beautiful dogs and for inspiring this project.
 
