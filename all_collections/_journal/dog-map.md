@@ -38,4 +38,4 @@ Using the American Kennel Association’s top speed of dog breeds was a way of d
 
 Obviously, a dog could not run at full speed for a two day marathon – but if they could, these dogs would run between 3100-3600km. Saskatchewan itself is only 630km along the American border. That scale wouldn’t provide an informative map. Through experimentation, even a three hour run would leave very little sightlines from the starting point.
 
-<!--[DogMap]: /assets/images/journalpost/dogmap.png "How far can these dogs run?"-->
+[DogMap]: https://lh3.googleusercontent.com/pw/AMWts8Ayp2enFsI-s_Yg-A_gUCHfacYpcoVaQ8S2tXMBfIn7Nlm5SQ2Ypky0pP62KdyybqK2yRQTaqUg1DXBCEkeWBLhEWv4FRQgdg35r7JAMQGcuKxEMSLiVRCkLFAA9B9a6pwqKImKcng3m3ZZ9NB6JW_OoQ=w617-h403-s-no?authuser=0 "How far can these dogs run?"
