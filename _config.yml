@@ -71,7 +71,7 @@ plugins:
 #
 
 include: ["_pages"] #as directed by minimal mistakes theme documentation
-teaser: /assets/images/default-teaser-500x300px.png #theme default teaser image
+#teaser: /assets/images/default-teaser-500x300px.png #theme default teaser image
 
 atom_feed:
   hide: true

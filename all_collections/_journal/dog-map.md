@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "Radial Line of Sight and Dogs"
-date:   2023-04-04 00:00:00 -0300
+title:  "Of Dogs on Maps"
+date:   2020-12-17 00:00:00 -0300
 categories: journal
 author: Dan Phillips
 excerpt: "In Saskatchewan, there's nothing to do but watch your dog run away for three days. Can that be true?"

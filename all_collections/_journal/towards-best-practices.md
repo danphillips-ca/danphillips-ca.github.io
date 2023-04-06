@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Towards Best Practices"
-date:   2023-04-04 00:00:00 -0300
+date:   2021-10-13 00:00:00 -0300
 categories: journal
 author: Dan Phillips
 image: /assets/images/default-teaser-500x300px.png

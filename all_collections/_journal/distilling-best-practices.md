@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Distilling Best Practices"
-date:   2023-04-04 00:00:00 -0300
+date:   2020-09-20 00:00:00 -0300
 categories: journal
 author: Dan Phillips
 excerpt: "I gave a total of five presentations with audiences of different specializations: some in research, some in cataloguing, and some in retrieval."
