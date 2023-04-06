@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "A (good) Data Description"
 date:   2023-04-04 00:00:00 -0300
 categories: journal

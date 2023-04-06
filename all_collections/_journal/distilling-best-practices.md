@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "Distilling Best Practices"
 date:   2023-04-04 00:00:00 -0300
 categories: journal
