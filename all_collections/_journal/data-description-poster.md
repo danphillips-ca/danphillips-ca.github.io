@@ -1,10 +1,10 @@
 ---
 layout: single
-title:  "A (good) Data Description"
+title:  "A (good) Data Description Poster"
 date:   2021-04-20 00:00:00 -0300
 categories: journal
 author: Dan Phillips
-excerpt: "Resources from a poster presentation with the Research Data Alliance in 2021."
+excerpt: "Resources from a Research Data Alliance poster presentation."
 ---
 
 Resources from a poster presentation with the Research Data Alliance in 2021.
