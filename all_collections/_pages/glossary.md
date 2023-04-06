@@ -7,7 +7,9 @@ permalink: /glossary/
 # classes: wide
 excerpt: "aka danctionary"
 ---
+
 **(aka Danctionary)**
+
 ![a bookplate that says ex libris dan phillips][dan-bookplate]
 
 Everyone use specialized words, acronyms, abbreviations, or initialisms that aren’t widely understood. Although I try not to, I’m guilty of this too.

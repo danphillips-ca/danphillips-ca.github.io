@@ -2,7 +2,10 @@
 layout: single
 title: Curriculum Vitae
 permalink: /vita/
+excerpt: "A detailed resume."
 ---
+
+**a detailed resume**
 
 ![Dan speaks at a poster presentation][dan-poster]
 

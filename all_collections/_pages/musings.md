@@ -19,6 +19,8 @@ gallery:
     alt: "placeholder image 3"
 ---
 
+**the microblog**
+
 ![Dan looking amused][dan-ammused]
 
 This is an example of a collection.

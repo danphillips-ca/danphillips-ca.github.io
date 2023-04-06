@@ -3,8 +3,10 @@ title: Privacy
 layout: single
 permalink: /privacy/
 #classes: wide
-excerpt: "A personal privacy policy for my blog and portfolio"
+excerpt: "A personal privacy policy for my blog and portfolio."
 ---
+
+**a privacy policy for a personal blog**
 
 ![Dan in a bathtub][dan-bathes]
 
