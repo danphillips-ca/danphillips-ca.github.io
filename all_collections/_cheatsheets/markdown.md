@@ -13,6 +13,10 @@ Markdown is an easy to read document formatting language that can be quickly con
 
 Many platforms (including Github) use Extended Markdown, which handles some fancier things like tables.
 
+## Styleguide
+
+My personal use of markdown will have a few notes in the [Styleguide](/cheatsheets/styleguide/)
+
 ## Formatting
 
 ### Essentials
@@ -170,8 +174,15 @@ Here's a sentence with a footnote.[^1]
 
 [^1]: This is the footnote from that first sentence.
 
----
+### Defined Abbreviations
 
-# Personal Styleguide Notes
+Here is an example of using an abbreviation in Markdown:
 
-I intend to always use variables for links and images, and I will define them at the end of markdown documents. This gives me a consistant place to check when migrating content to ensure that all related assets are brought together.
+```markdown
+[*HTML*]: Hyper Text Markup Language
+
+You can use HTML to create websites.
+
+In the above example, we have defined the abbreviation "HTML" using the [*abbr*]: *definition* syntax, and then used it in the text by enclosing it in square brackets.
+```
+

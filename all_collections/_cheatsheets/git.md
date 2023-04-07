@@ -6,3 +6,57 @@ categories: cheatsheets
 author: Dan Phillips
 toc: true
 ---
+
+# Git Cheat Sheet
+
+Git is a powerful version control system that allows developers to track changes to their codebase and collaborate with others. Here are some of the most commonly used Git commands:
+
+## Basic commands
+
+- `git init`: Initialize a new Git repository in the current directory.
+- `git add <file>`: Add a file to the staging area.
+- `git add .`: Add all changed files to the staging area.
+- `git commit -m "<message>"`: Commit changes with a descriptive message.
+- `git status`: View the status of your working directory.
+
+## Branching and merging
+
+- `git branch`: List all local branches.
+- `git branch <branch-name>`: Create a new branch.
+- `git checkout <branch-name>`: Switch to a different branch.
+- `git merge <branch-name>`: Merge changes from another branch into the current branch.
+- `git merge --abort`: Abort a merge that has conflicts.
+
+## Remotes
+
+- `git remote add <name> <url>`: Add a remote repository.
+- `git fetch <remote>`: Fetch changes from a remote repository.
+- `git pull <remote> <branch>`: Pull changes from a remote branch.
+- `git push <remote> <branch>`: Push changes to a remote branch.
+- `git push --force <remote> <branch>`: Force push changes to a remote branch.
+
+## Reverting and resetting
+
+- `git revert <commit>`: Revert a commit by creating a new commit.
+- `git reset <commit>`: Reset the current branch to a previous commit.
+- `git reset --hard <commit>`: Reset the current branch to a previous commit and discard all changes.
+
+## Other useful commands
+
+- `git log`: View the commit history.
+- `git diff`: Show the difference between the working directory and the last commit.
+- `git tag <tag-name>`: Create a new tag for the current commit.
+- `git stash`: Stash changes in the working directory for later use.
+- `git clean`: Remove untracked files from the working directory.
+
+### Common Flags
+
+Here are some common flags you can use with the above commands:
+
+- `-m "<message>"`: Use this flag with `git commit` to provide a descriptive commit message. For example: `git commit -m "Added new feature"`
+- `-f`: Use this flag with `git clean` to force removal of untracked files and directories. For example: `git clean -f`
+- `-d`: Use this flag with `git clean` to remove untracked directories. For example: `git clean -f -d`
+- `-x`: Use this flag with `git clean` to remove ignored files and directories in addition to untracked files and directories. For example: `git clean -f -d -x`
+- `--force`: Use this flag with `git push` to force push changes to a remote branch. For example: `git push --force origin master`
+
+This cheat sheet covers some of the most commonly used Git commands and flags. For more information on Git, check out the official documentation at https://git-scm.com/docs.
