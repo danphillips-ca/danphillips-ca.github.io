@@ -3,6 +3,7 @@ layout: single
 title: Curriculum Vitae
 permalink: /vita/
 excerpt: "A detailed resume."
+TOC: true
 ---
 
 **a detailed resume**
