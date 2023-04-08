@@ -15,7 +15,7 @@ toc: true
 
 Achieving the potential of widespread sharing of open research data requires that sharing data is straightforward, supported, and well-understood; and that data is discoverable by researchers. Our literature review and environment scan suggest that while substantial effort is dedicated to structured descriptions of research data, unstructured fields are commonly available (title, description) yet poorly understood. There is no clear description of what information should be included, in what level of detail, and in what order. These human-readable fields, routinely used in indexing and search features and reliably federated, are essential to the research data user experience. We propose a set of high-level best practices for unstructured description of datasets, to serve as the essential starting point for more granular, discipline-specific guidance. We based these practices on extensive review of literature on research article abstracts; archival practice; experience in supporting research data management; and grey literature on data documentation. They were iteratively refined based on comments received in a webinar series with researchers, data curators, data repository managers, and librarians in Canada. We demonstrate the need for information research to more closely examine these unstructured fields and provide a foundation for a more detailed conversation.
 
-## Funding
+## Funding Acknowledgements
 
 * Dalhousie University
 * Canada First Research Excellence Fund
