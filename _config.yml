@@ -123,9 +123,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Privacy"
+    - label: "BY-NC Dan Phillips"
       icon: "fab fa-brands fa-creative-commons"
-      url: "/privacy/"
+      url: "https://creativecommons.org/licenses/by-nc/4.0/"
     - label: "0000-0002-0386-0132"
       icon: "fab fa-brands fa-orcid"
       url: "https://orcid.org/0000-0002-0386-0132"
