@@ -1,9 +1,7 @@
 ---
 title: Glossary
-layout: collection
+layout: single
 permalink: /glossary/
-# collection: journal
-# entries_layout: grid
 # classes: wide
 excerpt: "aka danctionary"
 ---
