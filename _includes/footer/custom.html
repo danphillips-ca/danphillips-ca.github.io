@@ -1,4 +1,13 @@
 <!-- start custom footer snippets -->
+
+#{% if site.data.navigation.footer %}
+#  <nav class="footer-nav">
+#    {% include navigation.html navigation=site.data.navigation.footer %}
+#  </nav>
+#{% endif %}
+
+
+
 <div class="page__footer-follow">
     <ul class="social-icons">
       <li><a href="/glossary/" rel="nofollow noopener noreferrer">

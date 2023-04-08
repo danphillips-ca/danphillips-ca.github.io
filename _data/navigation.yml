@@ -8,7 +8,19 @@ main:
   - title: "CV"
     url: /vita/
 
-
+footer:
+  - title: "Glossary"
+     icon:  "fa fa-book"
+      url: /glossary/
+  - title: "Cheat Sheets"
+     icon:  "fa fa-pen"
+      url: /cheatsheets/
+  - title: "Privacy"
+     icon:  "fa fa-user-secret"
+      url: /privacy/
+  - title: "Feedback"
+     icon:  "fa fa-comment"
+      url: https://learnwith.danphillips.ca/
 
 #To enable the footer menu, add the following to the site's _layouts/default.html file.
 #
