@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "danny" # "air", "aqua", "contrast", "dark", "dirt", 
 locale                   : "en-US"
 title                    : "DanPhillips.ca"
 title_separator          : "-"
-subtitle                 : I am in the process of migrating from WordPress to Jekyll.
+subtitle                 : a personal blog and portfolio
 name                     : "Dan Phillips"
-description              : "A personal blog and portfolio."
+description              : "The personal blog and portfolio of Dan Phillips."
 url                      : "https://danphillips-ca.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "/danphillips-ca/danphillips-ca.github.com" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Dan Phillips"
   avatar           : /assets/images/dan-profilephoto.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "The guy this website is named after."
   location         : "Halifax NS"
   email            : dan@danphillips.ca
   links:
