@@ -1,8 +1,26 @@
+<!-- Quick and dirty footer menu -->
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+    <li><a href="/glossary/" rel="nofollow noopener noreferrer">
+      <i class="fa fa-book"></i> Glossary</a>
+    </li>
+    <li><a href="/cheatsheets/" rel="nofollow noopener noreferrer">
+      <i class="fa fa-pen"></i> Cheat Sheets</a>
+    </li>
+    <li>
+      <a href="/privacy/" rel="nofollow noopener noreferrer">
+        <i class="fa fa-user-secret" aria-hidden="true"></i> Privacy</a>
+    </li>
+    <li>
+      <a href="https://learnwith.danphillips.ca/" rel="nofollow noopener noreferrer">
+        <i class="fa fa-comment" aria-hidden="true"></i> Feedback</a>
+      </li>
+  </ul>
+</div>
+
+<!-- From Config -->
+<div class="page__footer-follow">
+  <ul class="social-icons">
 
     {% if site.footer.links %}
       {% for link in site.footer.links %}
@@ -18,4 +36,6 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+
+<div class="page__footer-copyright">{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; a moderately butchered version of the <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> theme.</div>
