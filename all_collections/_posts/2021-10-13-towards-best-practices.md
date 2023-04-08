@@ -3,6 +3,7 @@ layout: single
 title:  "Towards Best Practices Publication"
 date:   2021-10-13 00:00:00 -0300
 categories: journal
+tags: research, metadata
 author: Dan Phillips
 image: /assets/images/default-teaser-500x300px.png
 teaser: /assets/images/default-teaser-500x300px.png

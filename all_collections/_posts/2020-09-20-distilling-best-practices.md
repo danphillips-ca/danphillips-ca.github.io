@@ -1,13 +1,14 @@
 ---
 layout: single
-title:  "Best Practices Presentation"
+title:  "Honing Best Practices"
 date:   2020-09-20 00:00:00 -0300
 categories: journal
+tags: research, metadata
 author: Dan Phillips
 excerpt: "A presentaiton and feedback forum with the Portage Network."
 ---
 
-Distilling Best Practices
+## Distilling Best Practices
 
 As part of my research on unstructured descriptive metadata in environmental data repositories, I gave a total of five presentations with audiences of different specializations: some in research, some in cataloguing, and some in retrieval.
 

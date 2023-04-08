@@ -2,9 +2,8 @@
 title: Journal
 layout: collection
 permalink: /journal/
-collection: journal
+collection: posts
 entries_layout: grid
-#classes: wide
 excerpt: "aka the mesoblog"
 ---
 
