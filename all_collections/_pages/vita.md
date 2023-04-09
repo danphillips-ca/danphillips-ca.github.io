@@ -30,11 +30,11 @@ Canadian
 
 ## EDUCATION
 
-| Institution                   | Credential                                             | Year |
+| Institution                   | Credential                                             | Conferred |
 | -----------------------------|--------------------------------------------------------|-----:|
-| Dalhousie University         | Master of Resource and <br>Environmental Management        | 2021 |
+| Dalhousie University         | Master of Resource and Environmental Management        | 2021 |
 | Dalhousie University         | Master of Information                                  | 2021 |
-| Contestoga College           | Graduate Certificate in <br>Human Resources Management     | 2013 |
+| Contestoga College           | Graduate Certificate in Human Resources Management     | 2013 |
 | Wilfrid Laurier University   | Bachelor of Arts                                       | 2010 |
 
 
@@ -135,7 +135,8 @@ Theological Schools, Waterloo ON.
 
 ### Select Presentations
 
-> Phillips, D. (2020). Portage Webinar – Data Summaries: Distilling Best Practices [Webinar]. The Canadian Association of Research Libraries (CARL), Halifax NS (virtual). <https://portagenetwork.ca/event/portage-webinar-data-summaries-distilling-best-practices> [Similar presentation given a total of five times to audiences with various areas of subject matter expertise.]
+> Phillips, D. (2020). Portage Webinar – Data Summaries: Distilling Best Practices [Webinar]. The Canadian Association of Research Libraries (CARL), Halifax NS (virtual). <https://portagenetwork.ca/event/portage-webinar-data-summaries-distilling-best-practices> [^1] 
+[1]: A similar presentation given a total of five times to audiences with various areas of subject matter expertise including researchers, data curators, and retreival specialists.
 
 > Phillips, D. and Hynes, N. (September 2019.) ‘Slack’-ing Off in Grad School: Using Slack for Effective Communication. Workshop presented at the School of Information Management Brown-Bag Lunch Series, Halifax NS.
 
@@ -195,8 +196,8 @@ bookbinding, career planning, and professional associations.
 
 | Association                                |    Years     |
 | ------------------------------------------ | ----------: |
-| Atlantic Provinces Library Association      | 2019–Present |
-| Nova Scotia Library Association             | 2019–Present |
+| Atlantic Provinces Library Association      | Since 2019 |
+| Nova Scotia Library Association             | Since 2019 |
 | American Library Association                | 2018–2022    |
 | Association of College and Research Libraries| 2018–2022    |
 | Halifax Library Association                 | 2018–2022    |
@@ -208,7 +209,7 @@ bookbinding, career planning, and professional associations.
 ### Volunteering
 
 | Organization             | Role                            | Year(s)      |
-|--------------------------|---------------------------------|-------------|
+|--------------------------|---------------------------------|-------------:|
 | Canadian Cancer Society   | February campaign fundraising  | 2021–2022   |
 | Funny Pages              | Website design                  | 2019        |
 | Text-A-Tree              | Public engagement               | 2019        |
