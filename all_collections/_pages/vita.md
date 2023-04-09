@@ -137,7 +137,7 @@ Theological Schools, Waterloo ON.
 
 > Phillips, D. (2020). Portage Webinar – Data Summaries: Distilling Best Practices [Webinar]. The Canadian Association of Research Libraries (CARL), Halifax NS (virtual). <https://portagenetwork.ca/event/portage-webinar-data-summaries-distilling-best-practices> [^1]
 
-[1]: A similar presentation given a total of five times to audiences with various areas of subject matter expertise including researchers, data curators, and retreival specialists.
+[^1]: A similar presentation given a total of five times to audiences with various areas of subject matter expertise including researchers, data curators, and retreival specialists.
 
 > Phillips, D. and Hynes, N. (September 2019.) ‘Slack’-ing Off in Grad School: Using Slack for Effective Communication. Workshop presented at the School of Information Management Brown-Bag Lunch Series, Halifax NS.
 
