@@ -34,7 +34,7 @@ Examples: stores may may have quality control mechanisms, people using stores ma
 
 If you'd like to copy any of my bookmarklets, drag it into your bookmarks bar.
 
-## Some Handy Bookmarklets
+## Bookmarklets I've Used
 
 ### Formatting
 
@@ -42,17 +42,21 @@ If you'd like to copy any of my bookmarklets, drag it into your bookmarks bar.
 >
 >This bookmarklet finds unordered lists (bullets) and turns them into ordered lists (numbers).
 
->[Edit Everything]
+>**Edit Everything** [^1]
 >
 >This bookmarklet makes all text editable. (Just on your browser - you're not actually changing the site.)
+
+[^1]: Whoops. This one isn't working properly anymore.
 
 >[Sort Tables]
 >
 >Adds a link above each column of a table that allows sorting.
 
->[View Passwords]
+>**View Passwords** [^2]
 >
 >Returns a prompt that shows whatever text is entered into an obscured password field.
+
+[^2]: Link removed. The real lesson with this one is to know that a bit of javascript can have this functionality.
 
 ### Save and Subscribe
 
@@ -60,9 +64,11 @@ If you'd like to copy any of my bookmarklets, drag it into your bookmarks bar.
 >
 >Adds a resource to RefWorks. (Requires an account.)
 
->[Youtube Download]
+>**Youtube Download** [^3]
 >
->Uses the deturl service to download a copy of YouTube videos for offline playback. This service is not affiliated with YouTube.
+>Uses a third party service to download a copy of YouTube videos for offline playback. This service is not affiliated with YouTube.
+
+[^3]: Link removed. This probably violates some terms of service or something.
 
 ### Search
 
@@ -84,9 +90,11 @@ If you'd like to copy any of my bookmarklets, drag it into your bookmarks bar.
 
 ### Translate
 
->[Translate]
+>**Translate**[^4]
 >
 >Entered the current URL into Google Translate, which automatically detects the source language and translates the entire page to English.
+
+[^4]: Link removed. It stopped working - I'm passively looking for an alternative.
 
 ## Disclaimer
 
@@ -95,15 +103,9 @@ I am not the developer of these bookmarklets. Licenses are unknown and most were
 
 [Bullets to Numbers]: javascript:uls=document.getElementsByTagName("ul"); for (i=uls.length-1; i>=0; --i) { oldul = uls[i]; newol = document.createElement("ol"); for(j=0;j<oldul.childNodes.length;++j) newol.appendChild(oldul.childNodes[j].cloneNode(true)); oldul.parentNode.replaceChild(newol, oldul); } void 0
 
-[Edit Everything]: javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0
-
 [Sort Tables]: javascript:function toArray (c){var a, k;a=new Array;for (k=0; k<c.length; ++k)a[k]=c[k];return a;}function insAtTop(par,child){if(par.childNodes.length) par.insertBefore(child, par.childNodes[0]);else par.appendChild(child);}function countCols(tab){var nCols, i;nCols=0;for(i=0;i<tab.rows.length;++i)if(tab.rows[i].cells.length>nCols)nCols=tab.rows[i].cells.length;return nCols;}function makeHeaderLink(tableNo, colNo, ord){var link;link=document.createElement('a');link.href='javascript:sortTable('+tableNo+','+colNo+','+ord+');';link.appendChild(document.createTextNode((ord>0)?%27a%27:%27d%27));return link;}function makeHeader(tableNo,nCols){var header, headerCell, i;header=document.createElement(%27tr%27);for(i=0;i<nCols;++i){headerCell=document.createElement(%27td%27);headerCell.appendChild(makeHeaderLink(tableNo,i,1));headerCell.appendChild(document.createTextNode(%27/%27));headerCell.appendChild(makeHeaderLink(tableNo,i,-1));header.appendChild(headerCell);}return header;}g_tables=toArray(document.getElementsByTagName(%27table%27));if(!g_tables.length) alert("This page doesn%27t contain any tables.");(function(){var j, thead;for(j=0;j<g_tables.length;++j){thead=g_tables[j].createTHead();insAtTop(thead, makeHeader(j,countCols(g_tables[j])))}}) ();function compareRows(a,b){if(a.sortKey==b.sortKey)return 0;return (a.sortKey < b.sortKey) ? g_order : -g_order;}function sortTable(tableNo, colNo, ord){var table, rows, nR, bs, i, j, temp;g_order=ord;g_colNo=colNo;table=g_tables[tableNo];rows=new Array();nR=0;bs=table.tBodies;for(i=0; i<bs.length; ++i)for(j=0; j<bs[i].rows.length; ++j){rows[nR]=bs[i].rows[j];temp=rows[nR].cells[g_colNo];if(temp) rows[nR].sortKey=temp.innerHTML;else rows[nR].sortKey="";++nR;}rows.sort(compareRows);for (i=0; i < rows.length; ++i)insAtTop(table.tBodies[0], rows[i]);}
 
-[View Passwords]: javascript:(function(){var s,F,j,f,i; s = " "; F = document.forms; for(j=0; j<F.length; ++j) { f = F[j]; for (i=0; i<f.length; ++i) { if (f[i].type.toLowerCase() == "password") s += f[i].value + ""; } } if (s) alert("Passwords in forms on this page: " + s); else alert("There are no passwords in forms on this page.");})();
-
 [Add to Refworks]: javascript:var d=document,s=d.createElement('script'),EXT_SERVICE_PROVIDER='https://refworks.proquest.com',PME_SERVICE_PROVIDER='https://pme.proquest.com';s.src=PME_SERVICE_PROVIDER+'/PME.js';(d.body?d.body:d.documentElement).appendChild(s);void(0);
-
-[YouTube Download]: javascript:(function(){ window.location.replace("http://deturl.com/" + document.URL); })();
 
 [View Cache]: javascript:location.href='http://webcache.googleusercontent.com/search?q=cache:%27+window.location.href
 
@@ -112,6 +114,3 @@ I am not the developer of these bookmarklets. Licenses are unknown and most were
 [Show Linking Pages]: javascript:(function(){ document.location.href='http://www.google.com/search?q=link:%27+escape(document.location.href) })();
 
 [Search Current Domain]: javascript:(function(){ p=prompt('Search term:',''); if(p){ document.location.href='http://www.google.com/search?q=site:%27+document.location.href.split(%27/%27)[2]+%27 %27+escape(p)} })();
-
-
-[Translate]: javascript:var t=((window.getSelection&&window.getSelection())||(document.getSelection&&document.getSelection())||(document.selection &&document.selection.createRange&&document.selection.createRange().text));var e=(document.charset||document.characterSet);if(t!=''){location.href='http://translate.google.com/translate_t?text=%27+t+%27&hl=en&tbb=1&ie=%27+e;}else{location.href=%27http://translate.google.com/translate?u=%27+escape(location.href)+%27&hl=en&tbb=1&ie=%27+e;};
