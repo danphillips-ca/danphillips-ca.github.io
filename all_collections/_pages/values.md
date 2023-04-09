@@ -3,7 +3,6 @@ title: Values
 layout: single
 permalink: /values/
 excerpt: "aka the macroblog"
-
 ---
 
 **the macroblog**

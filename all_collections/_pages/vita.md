@@ -10,13 +10,7 @@ toc: true
 
 ![Dan speaks at a poster presentation][dan-poster]
 
----
-
-## DAN PHILLIPS
-
-**[Download PDF Version]**
-
-### Contact
+## CONTACT
 
 | Medium | Contact             |
 | ------ | -------------------:|
@@ -24,9 +18,6 @@ toc: true
 | Phone  |         519.732.6697|
 | Web    |      www.danphillips.ca|
 | ORCID  | 0000-0002-0386-0132 |
-
-### Citizenship
-Canadian
 
 ## EDUCATION
 
