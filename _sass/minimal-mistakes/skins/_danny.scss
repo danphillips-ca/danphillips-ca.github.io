@@ -17,10 +17,21 @@ $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $text-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
 
+.page__title {
+  color: $text-color !important
+}
+
+h1, h2, h3 {
+  color: $primary-color !important;
+}
 
 .page__content a {  /* applies to all a tags in .page__content only */
   text-decoration: none; /* remove underline */
   font-weight: bold;
+}
+
+.greedy-nav__toggle {
+  $link-color: $text-color !important;
 }
 
 .site-title {
