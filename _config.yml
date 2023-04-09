@@ -106,16 +106,13 @@ analytics:
 author:
   name             : "Dan Phillips"
   avatar           : /assets/images/dan-profilephoto.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "The guy this website is named after."
+  bio              : "A handsome man."
   location         : "Halifax NS"
   email            : dan@danphillips.ca
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "dan@danphillips.ca"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "danphillips.ca"
+      url: "http://danphillips.ca"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/danphillips-ca"
@@ -171,11 +168,6 @@ collections_dir: all_collections
 collections:
   musings:
     output: false #no output needed if treated as a microblog with no links.
-  journal:
-    output: true
-    url: /:collection/:title
-  cheatsheets:
-    output: true
 
 # Conversion
 markdown: kramdown
