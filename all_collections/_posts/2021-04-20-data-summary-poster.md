@@ -3,7 +3,7 @@ layout: single
 title:  "A (good) Data Description"
 date:   2021-04-20 00:00:00 -0300
 categories: journal
-tags: research, metadata
+tags: research metadata
 author: Dan Phillips
 excerpt: "Resources from a Research Data Alliance poster presentation."
 toc: true

@@ -1,13 +1,13 @@
 ---
 layout: single
-title:  "Towards Best Practices Publication"
+title:  "Towards Best Practices"
 date:   2021-10-13 00:00:00 -0300
 categories: journal
-tags: research, metadata
+tags: research metadata
 author: Dan Phillips
 image: /assets/images/default-teaser-500x300px.png
 teaser: /assets/images/default-teaser-500x300px.png
-excerpt: "A publication in ASIS&T about longform data summaries."
+excerpt: "An ASIS&T publication about longform data summaries."
 toc: true
 ---
 

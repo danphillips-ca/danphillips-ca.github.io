@@ -3,9 +3,9 @@ layout: single
 title:  "Honing Best Practices"
 date:   2020-09-20 00:00:00 -0300
 categories: journal
-tags: research, metadata
+tags: research metadata
 author: Dan Phillips
-excerpt: "A presentaiton and feedback forum with the Portage Network."
+excerpt: "A presentation and feedback forum with the Portage Network."
 ---
 
 ## Distilling Best Practices

@@ -3,7 +3,7 @@ layout: single
 title:  "Jekyll and the Minimal Mistakes Theme"
 date:   2023-04-02 22:00:00 -0300
 categories: cheatsheets
-tags: Jekyll, Theme
+tags: Jekyll Theme
 author: Dan Phillips
 excerpt: "Some reminders about my Jekyll/Theme setup."
 toc: true
