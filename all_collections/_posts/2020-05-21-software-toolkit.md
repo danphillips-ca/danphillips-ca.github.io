@@ -6,6 +6,7 @@ categories: journal
 tags: tools
 author: Dan Phillips
 excerpt: "Open tools I use."
+classes: wide
 ---
 
 # My List of Useful Open Tools
