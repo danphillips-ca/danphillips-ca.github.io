@@ -166,6 +166,8 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 collections_dir: all_collections
 collections:
+  datadesign:
+    output: true #no output needed if treated as a microblog with no links.
   musings:
     output: false #no output needed if treated as a microblog with no links.
 
