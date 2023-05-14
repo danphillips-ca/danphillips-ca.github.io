@@ -190,6 +190,8 @@ bookbinding, career planning, and professional associations.
 | ------------------------------------------ | ----------: |
 | Atlantic Provinces Library Association      | Since 2019 |
 | Nova Scotia Library Association             | Since 2019 |
+| Canadian Health Libraries Association       | Since 2023  |
+| Saskatchewan Health Libraries Association   | Since 2023  |
 | American Library Association                | 2018–2022    |
 | Association of College and Research Libraries| 2018–2022    |
 | Halifax Library Association                 | 2018–2022    |

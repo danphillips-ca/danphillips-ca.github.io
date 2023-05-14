@@ -1,6 +1,6 @@
 main:
-  - title: "Musings"
-    url: /musings/
+#  - title: "Musings"
+#    url: /musings/
   - title: "Journal"
     url: /journal/
   - title: "Values"
