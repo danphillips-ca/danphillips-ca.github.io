@@ -4,7 +4,7 @@ title:  "Pedagoguisms"
 date:   2020-12-17 00:00:00 -0300
 collection: datadesign
 author: Dan Phillips
-excerpt: "This is a draft."
+excerpt: "The concepts of frameworks, as I understand them."
 toc: true
 ---
 
