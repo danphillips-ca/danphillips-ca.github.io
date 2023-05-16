@@ -31,6 +31,13 @@ toc: true
 
 
 ## PROFESSIONAL APPOINTMENTS/EMPLOYMENT
+### Saskatchewan Health Authority
+
+#### Librarian
+Apr 2023–Present
+
+* Involved in systems and data reporting processes.
+
 ### Mount Saint Vincent University
 
 #### Research Help Librarian | Part-Time
@@ -156,6 +163,12 @@ Theological Schools, Waterloo ON.
 
 ### Professional Engagement
 
+#### Membership Convener, Halifax Library Association
+
+Since 2022
+
+* Executive board member overseeing the membership roster and registration process.
+
 #### Public Relations and Promotions Convener, Nova Scotia Library Association
 
 2019–2022
@@ -187,24 +200,26 @@ bookbinding, career planning, and professional associations.
 ### Association Membership
 
 | Association                                |    Years     |
-| ------------------------------------------ | ----------: |
-| Atlantic Provinces Library Association      | Since 2019 |
-| Nova Scotia Library Association             | Since 2019 |
+| ------------------------------------------ | ----------:  |
+| Atlantic Provinces Library Association      | Since 2019  |
+| Nova Scotia Library Association             | Since 2019  |
 | Canadian Health Libraries Association       | Since 2023  |
 | Saskatchewan Health Libraries Association   | Since 2023  |
-| American Library Association                | 2018–2022    |
-| Association of College and Research Libraries| 2018–2022    |
-| Halifax Library Association                 | 2018–2022    |
-| Foothills Library Association               | 2019–2022    |
-| Maritimes Health Library Association        | 2019–2022    |
-| Ontario Library Association                 | 2019–2022    |
+| Halifax Library Association                 | Since 2018  |
+| Saskatchewan Library Association   | Since 2023  |
+| American Library Association                | 2018–2022   |
+| Association of College and Research Libraries| 2018–2022  |
+| Foothills Library Association               | 2019–2022   |
+| Maritimes Health Library Association        | 2019–2022   |
+| Ontario Library Association                 | 2019–2022   |
 
 
 ### Volunteering
 
 | Organization             | Role                            | Year(s)      |
 |--------------------------|---------------------------------|-------------:|
-| Canadian Cancer Society   | February campaign fundraising  | 2021–2022   |
+| Cystic Fibrosis Canada   | May campaign fundraising         | 2023       |
+| Canadian Cancer Society  | February campaign fundraising   | 2021–2022   |
 | Funny Pages              | Website design                  | 2019        |
 | Text-A-Tree              | Public engagement               | 2019        |
 
