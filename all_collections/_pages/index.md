@@ -3,21 +3,6 @@ layout: single #home for posts listed under content.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: "My name is Dan"
 permalink: /
-#gallery:
-#  - url: /musings/
-#    image_path: https://lh3.googleusercontent.com/pw/AMWts8Axk0gnbnPflkRhF3FkHXUhUaaeRfHSQhI5TzdItiNusOqUyn4kckRbiwINQHbpXGk8y9c_xSFUSyU3Q4bqcj5Y4V8BbkDtalCbCoSudPGkQDcugP3KE1reymY3v6rRZ0fXMEoNhGHT-NqitX-8yhh5pg=w800-h450-s-no?authuser=0
-#    alt: "Dan looking amused"
-#  - url: /journal/
-#    image_path: https://lh3.googleusercontent.com/pw/AMWts8Bu9UXmI7FX5XCxVPf3_tbSZUhyocGbOiMe2DiZqv0afOWij7UbQkRg6OFb5acBiR-ftCDbEFPawl2Z_gjGPIiE99IucrJDf9jc9OmoWlZApaETEakfpTnXfcPoiizW7yhfxt3Y43ncTEa1rhqDiKCesg=w800-h450-s-no?authuser=0
-#    alt: "A young Dan and his dog"
-#  - url: /values/
-#    image_path: https://lh3.googleusercontent.com/pw/AMWts8D4IGWMA7F02qBv8vqlzDrPCaQqY7TTCxQumGKdQ6hWztWmJV4DW9CdGb3LFeX8kzYh2dxbFpFtv4opPLjUJEbuIhXrowLbVqQmdb7SBSIcvU-PXjYxzYuDNLtpzEjEkKJTOwzuSZqbQhlqPGIdvm4ezQ=w800-h450-s-no?authuser=0
-#    alt: "Dan and a giant fiddle"
-#
-#If usising gallery, insert this line in the content:
-#{% include gallery caption="A blog for things big and small." %}
-
-
 ---
 
 **This is my blog and portfolio.**
