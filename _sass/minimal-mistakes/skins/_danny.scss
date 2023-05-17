@@ -58,3 +58,14 @@ h1, h2, h3 {
   filter: grayscale(0%);
   border: 2px solid $primary-color !important;
 }
+
+.third img:hover::after {
+  content: attr(title);
+  /* Additional styling */
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  top: 100%;
+  left: 0;
+}
