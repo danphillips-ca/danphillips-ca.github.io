@@ -2,10 +2,8 @@
 layout: single
 title:  "Software Toolkit"
 date:   2020-09-20 00:00:00 -0300
-categories: journal
-tags: tools
 author: Dan Phillips
-excerpt: "Open tools I use."
+excerpt: "I love open software. This list is a bit outdated, but I have it handy so I hope you enjoy!"
 classes: wide
 ---
 

@@ -2,10 +2,8 @@
 layout: single
 title:  "Style Guide"
 date:   2023-04-02 22:00:00 -0300
-categories: cheatsheets
-tags: Styleguide
 author: Dan Phillips
-excerpt: "Reminders of my personal styleguide."
+excerpt: "Reminders of my personal styleguide for this website and any personal documents I generate."
 toc: true
 ---
 

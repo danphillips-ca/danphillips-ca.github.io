@@ -2,10 +2,8 @@
 layout: single
 title:  "Bookmarklets"
 date:   2020-06-15 00:00:00 -0300
-categories: journal
-tags: tools
 author: Dan Phillips
-excerpt: "Bookmarklets I use."
+excerpt: "This is a list of bookmarklets that I've used over the years."
 toc: true
 ---
 

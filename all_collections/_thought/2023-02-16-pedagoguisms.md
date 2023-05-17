@@ -4,7 +4,7 @@ title:  "Pedagoguisms"
 date:   2020-12-17 00:00:00 -0300
 collection: datadesign
 author: Dan Phillips
-excerpt: "The concepts of frameworks, as I understand them."
+excerpt: "A personal journal entry on the concept of frameworks, as I understand them."
 toc: true
 ---
 

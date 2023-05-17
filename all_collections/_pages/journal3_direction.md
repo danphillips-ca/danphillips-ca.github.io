@@ -1,5 +1,5 @@
 ---
-title: Direction Explanation
+title: Directions & Guides
 layout: collection
 permalink: /journal/direction/
 collection: direction
