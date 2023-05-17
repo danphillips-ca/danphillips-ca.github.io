@@ -25,7 +25,7 @@ gallery:
 
 ![A young Dan and his dog][dan-and-dog]
 
-The blog posts below contain some personal reflections, tools, and accomplishments. Please feel free to leave comments or put resources to use! I strongly believe that feedback is a critical component to reflection.
+The blog posts below contain some personal reflections, tools, and accomplishments. Please feel free to put resources to use! I strongly believe that feedback is a critical component to reflection, so please also consider leaving me [Feedback](https://learnwith.danphillips.ca).
 
 {% include gallery caption="" %}
 
