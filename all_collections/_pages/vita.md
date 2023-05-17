@@ -165,7 +165,7 @@ Theological Schools, Waterloo ON.
 
 #### Membership Convener, Halifax Library Association
 
-Since 2022
+Since 2023
 
 * Executive board member overseeing the membership roster and registration process.
 

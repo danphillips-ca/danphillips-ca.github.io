@@ -5,10 +5,10 @@ permalink: /journal/thought/
 collection: thought
 entries_layout: grid
 #classes: wide
-excerpt: "Thunk thoughts"
+excerpt: "Exploring questions like, Is the past tense of Think 'Thunk'?"
 ---
 
-**making things look pretty**
+**Blog Posts and Academic Outputs**
 
 ![Dan and a Bird looking thoughtful][ThinkBird]
 
