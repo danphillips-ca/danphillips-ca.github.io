@@ -59,7 +59,7 @@ h1, h2, h3 {
   border: 2px solid $primary-color !important;
 }
 
-.third img:hover::after {
+img:hover::after {
   content: attr(title);
   /* Additional styling */
   position: absolute;
