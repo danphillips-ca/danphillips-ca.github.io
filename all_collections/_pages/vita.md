@@ -199,14 +199,14 @@ bookbinding, career planning, and professional associations.
 
 ### Association Membership
 
-| Association                                |    Years     |
+| Association <br>sorted by recency; duration                      |    Years     |
 | ------------------------------------------ | ----------:  |
 | Atlantic Provinces Library Association      | Since 2019  |
 | Nova Scotia Library Association             | Since 2019  |
 | Canadian Health Libraries Association       | Since 2023  |
 | Saskatchewan Health Libraries Association   | Since 2023  |
 | Halifax Library Association                 | Since 2018  |
-| Saskatchewan Library Association   | Since 2023  |
+| Saskatchewan Library Association            | Since 2023  |
 | American Library Association                | 2018–2022   |
 | Association of College and Research Libraries| 2018–2022  |
 | Foothills Library Association               | 2019–2022   |
