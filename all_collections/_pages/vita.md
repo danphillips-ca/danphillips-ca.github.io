@@ -25,7 +25,7 @@ toc: true
 | -----------------------------|--------------------------------------------------------|-----:|
 | Dalhousie University         | Master of Resource and Environmental Management        | 2021 |
 | Dalhousie University         | Master of Information                                  | 2021 |
-| Contestoga College           | Graduate Certificate in Human Resources Management     | 2013 |
+| Conestoga College           | Graduate Certificate in Human Resources Management     | 2013 |
 | Wilfrid Laurier University   | Bachelor of Arts                                       | 2010 |
 
 
