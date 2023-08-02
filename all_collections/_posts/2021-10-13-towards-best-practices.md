@@ -1,11 +1,11 @@
 ---
-layout: single
 title:  "Towards Best Practices"
+excerpt: "An ASIS&T publication about longform data summaries."
 date:   2021-10-13 00:00:00 -0300
 author: Dan Phillips
 image: /assets/images/default-teaser-500x300px.png
 teaser: /assets/images/default-teaser-500x300px.png
-excerpt: "An ASIS&T publication about longform data summaries."
+layout: single
 toc: true
 ---
 

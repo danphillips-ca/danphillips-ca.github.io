@@ -1,14 +1,11 @@
 ---
-layout: single
 title:  "Pedagoguisms"
-date:   2020-12-17 00:00:00 -0300
-collection: datadesign
-author: Dan Phillips
 excerpt: "A personal journal entry on the concept of frameworks, as I understand them."
+date:   2020-12-17 00:00:00 -0300
+author: Dan Phillips
+layout: single
 toc: true
 ---
-
-(Well, that’s an obnoxious title.)
 
 ## Preface
 
@@ -119,10 +116,10 @@ The word encyclopaedia is derived from the Greek *enkyklios paideia*, “general
 
 ## Sources
 
-Collison, R. L. and Preece, Warren E. (2022, October 18). encyclopaedia. Encyclopedia Britannica. <britannica.com/topic/encyclopaedia>
+Collison, R. L. and Preece, Warren E. (2022, October 18). encyclopaedia. Encyclopedia Britannica. <https://britannica.com/topic/encyclopaedia>
 
-Education. (n.d.). In Oxford English dictionary. Retrieved March 2023, from <oed.com/view/Entry/59584>
+Education. (n.d.). In Oxford English dictionary. Retrieved March 2023, from <https://oed.com/view/Entry/59584>
 
-Literacy. (n.d.). In Oxford English dictionary. Retrieved March 2023, from <oed.com/view/Entry/109054>
+Literacy. (n.d.). In Oxford English dictionary. Retrieved March 2023, from <https://oed.com/view/Entry/109054>
 
 [cube]: https://lh3.googleusercontent.com/pw/AJFCJaUsPFdmd6B9d6XZTzhjQq8T-BfXPh1Mp05nj82PGWhn78lPrRp0rTXPzCWvDOHDFKrP7V-Sie0z7CXq0uNJPbbm96h4mQAReH2Upj5xJZ9KHgq_VBgV-AprKPJJqwrkiJBMnN5iirEB9yzRwNhI8IcTrQ=w640-h629-s-no?authuser=0

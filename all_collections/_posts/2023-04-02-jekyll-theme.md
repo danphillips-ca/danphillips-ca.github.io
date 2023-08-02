@@ -1,9 +1,9 @@
 ---
-layout: single
 title:  "Jekyll and the Minimal Mistakes Theme"
+excerpt: "Some reminders about my Jekyll/Theme setup. Actually, this is just the default stuff -- I've butchered my installation."
 date:   2023-04-02 22:00:00 -0300
 author: Dan Phillips
-excerpt: "Some reminders about my Jekyll/Theme setup. Actually, this is just the default stuff -- I've butchered my installation."
+layout: single
 toc: true
 ---
 

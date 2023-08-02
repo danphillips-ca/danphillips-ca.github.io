@@ -1,9 +1,9 @@
 ---
-layout: single
 title:  "Bookmarklets"
+excerpt: "This is a list of bookmarklets that I've used over the years."
 date:   2020-06-15 00:00:00 -0300
 author: Dan Phillips
-excerpt: "This is a list of bookmarklets that I've used over the years."
+layout: single
 toc: true
 ---
 

@@ -1,12 +1,11 @@
 ---
-layout: single
 title:  "Time Capsule"
+excerpt: "A fun excercize I like doing every eyar. We can save more than daylight when we Spring Ahead."
 date:   2022-03-06 00:00:00 -0300
 author: Dan Phillips
-excerpt: "A fun excercize I like doing every eyar. We can save more than daylight when we Spring Ahead."
+layout: single
 toc: true
 ---
-
 
 ## Background/Inspiration
 

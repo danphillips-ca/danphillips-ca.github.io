@@ -1,9 +1,9 @@
 ---
-layout: single
 title:  "Software Toolkit"
+excerpt: "I love open software. This list is a bit outdated, but I have it handy so I hope you enjoy!"
 date:   2020-09-20 00:00:00 -0300
 author: Dan Phillips
-excerpt: "I love open software. This list is a bit outdated, but I have it handy so I hope you enjoy!"
+layout: single
 classes: wide
 ---
 

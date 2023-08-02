@@ -1,9 +1,9 @@
 ---
-layout: single
 title:  "Honing Best Practices"
+excerpt: "A presentation and feedback forum with the Portage Network."
 date:   2020-09-20 00:00:00 -0300
 author: Dan Phillips
-excerpt: "A presentation and feedback forum with the Portage Network."
+layout: single
 ---
 
 ## Distilling Best Practices

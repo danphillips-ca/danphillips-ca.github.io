@@ -1,9 +1,9 @@
 ---
-layout: single
 title:  "A (good) Data Description"
+excerpt: "A poster presentation about effective longform metadata, presented to the Research Data Alliance poster presentation."
 date:   2021-04-20 00:00:00 -0300
 author: Dan Phillips
-excerpt: "A poster presentation about effective longform metadata, presented to the Research Data Alliance poster presentation."
+layout: single
 toc: true
 ---
 
