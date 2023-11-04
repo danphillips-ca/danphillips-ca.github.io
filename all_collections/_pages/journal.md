@@ -3,7 +3,7 @@ title: Journal
 layout: home
 permalink: /journal/
 collection: posts
-entries_layout: grid
+entries_layout: list
 excerpt: "aka the mesoblog"
 
 # gallery:
