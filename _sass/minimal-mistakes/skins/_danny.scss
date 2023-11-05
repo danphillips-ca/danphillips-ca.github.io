@@ -85,3 +85,18 @@ figure.third a::after {
 figure.third a:hover::after {
   display: block;
 }
+
+
+.archive__item-title a {
+  text-decoration: none; /* Remove the underline by default */
+}
+
+.archive__item-title a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.archive__item-date {
+  margin-top: .2em;
+  margin-bottom: .3em;
+  font-size: .75em;
+}
