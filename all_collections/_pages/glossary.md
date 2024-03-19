@@ -6,7 +6,7 @@ permalink: /glossary/
 excerpt: "aka danctionary"
 ---
 
-**(aka Danctionary)**
+**(aka Danctionary; Danslation)**
 
 ![a bookplate that says ex libris dan phillips][dan-bookplate]
 
