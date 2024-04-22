@@ -36,7 +36,9 @@ toc: true
 #### Librarian
 Apr 2023–Present
 
-* Involved in systems and data reporting processes.
+* Lead for Promotions and Statistics teams.
+* Member of Web and Systems teams.
+* ILS migration coordination from Alma to Insignia ILS.
 
 ### Mount Saint Vincent University
 
