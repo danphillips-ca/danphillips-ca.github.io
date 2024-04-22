@@ -38,7 +38,7 @@ Apr 2023–Present
 
 * Lead for Promotions and Statistics teams.
 * Member of Web and Systems teams.
-* ILS migration coordination from Alma to Insignia ILS.
+* Coordinator for Alma to Insignia ILS migration.
 
 ### Mount Saint Vincent University
 
