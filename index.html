@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!--Bootstrap-->
+    <!--Bootstrap CDN - script is below-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
 
@@ -24,66 +25,75 @@
 
 <body>
 <!--Instructions Alert-->
-    <div class="container mt-5">
-        <div class="alert custom-alert alert-dismissible col-md-6 col-12" role="alert" aria-label="Introduction and instructions">
-            <button type="button" class="close" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <h1 class="mb-4 text-center"><span style="font-size:.6em;">Hristo's Loyal</span><br/> Bison Slugs <br/><span style="font-size:.6em;">(a trivia club)</span></h1>
-            <p">This tool was originally created for Hristo's Loyal Bison Slugs - my trivia team in Halifax established in 2022. Files that you load into this game rendered completely by your browser; nothing is transferred from your computer.</p>
+<div class="container mt-5">
+    <div class="alert custom-alert alert-dismissible col-md-6 col-12" role="alert" aria-label="Introduction and instructions">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h1 class="mb-4 text-center"><span style="font-size:.6em;">Hristo's Loyal</span><br/> Bison Slugs <br/><span style="font-size:.6em;">(a trivia club)</span></h1>
+        <p>This was originally created for Hristo's Loyal Bison Slugs (est. 2022) - my trivia team in Halifax. Files that you load into this game are rendered completely by your browser; nothing is transferred from your computer.</p>
 
-            <h2 style="font-size: 20px">Instructions</h2>
-            <p style="margin: 0;">Use this template to populate trivia questions.</p>
+        <h2 style="font-size: 1.5rem">Instructions</h2>
+        <p style="margin: 0;">Use this template to populate trivia questions.</p>
 
-            <div col-12>
-                <a href="The Greatest Trivia Game of All Time.csv" download class="btn btn-primary m-2 w-100">Download Template</a>
-            </div>
-            <p>Setup:</p>
-            <ul>
-                <li>Category headings must be unique. You can have up to four categories.</li>
-                <li>Point values must be numbers and must be unique for each question/answer/media combination.</li>
-                <li>Media is optional. To include it, provide the complete url to an image file. If you don't want media, leave those cells blank.</li>
-            </ul>
-
-            <p>Need an example to get started? Try these!</p>
-            <div class="d-flex justify-content-around">
-                <a href="examples/Hristo Saves Christmas.csv" download class="btn btn-primary m-2 w-50 d-flex justify-content-center align-items-center">Holiday Special</a>
-                <a href="examples/The Bison Slugs Do Takeout.csv" download class="btn btn-primary m-2 w-50 d-flex justify-content-center align-items-center">Fast Food Extravaganza</a>
-            </div>
-            
-                    
-            <p>When you're ready, load your file here.</p>
-
-            <!--LOAD GAME-->
-            <div col-12>
-                <input type="file" class="form-control m-2 w-100" id="csvFileInput" accept=".csv">
-                <button class="btn btn-primary m-2 w-100" onclick="handleFile()">Load Your Game</button>
-            </div>
-                <!--END LOAD GAME-->
-            
-            <!--TOAST-->
-            <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
-            <!--END TOAST-->
-
+        <div class="col-12">
+            <a href="The Greatest Trivia Game of All Time.csv" download class="btn btn-primary m-2 w-100">Download Template <i class="bi bi-file-earmark-spreadsheet ms-1"></i></a>
         </div>
-                                  
-        <div id="output" class="table-responsive"></div>
+        <p>Setup:</p>
+        <ul>
+            <li>You can have up to four unique categories.</li>
+            <li>Questions (Q), Answers (A), Question Media (QM), and Answer Media (AM) must correspond to the same unique point value within their category. (See template.)</li>
+            <li>To include media, provide the complete url. YouTube, images, audio, and video are generally supported. If you don't want media, leave those cells blank.</li>
+        </ul>
+
+        <p>Need an example to get started? Try these!</p>
+        <div class="container">
+            <div class="row mb-3 ms-0 me-0">
+                <div class="col-lg-6 mb-3 mb-lg-0 text-center">
+                    <h3 style="font-size: 1rem; font-weight: bold;">Hristo Saves Christmas</h3>
+                    <div class="d-flex flex-column">
+                        <a href="examples/Hristo Saves Christmas.csv" download class="btn btn-primary w-100 d-flex justify-content-center align-items-center" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">Download <i class="bi bi-file-earmark-spreadsheet ms-1"></i></a>
+                        <button class="btn btn-secondary w-100" style="border-top-left-radius: 0; border-top-right-radius: 0;" onclick="loadSample('examples/Hristo Saves Christmas.csv')">Play Now <i class="bi bi-mouse2"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <h3 style="font-size: 1rem; font-weight: bold;">Fast Food Extravaganza</h3>
+                    <div class="d-flex flex-column">
+                        <a href="examples/The Bison Slugs Do Takeout.csv" download class="btn btn-primary w-100 d-flex justify-content-center align-items-center" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">Download <i class="bi bi-file-earmark-spreadsheet ms-1"></i></a>
+                        <button class="btn btn-secondary w-100" style="border-top-left-radius: 0; border-top-right-radius: 0;" onclick="loadSample('examples/The Bison Slugs Do Takeout.csv')">Play Now <i class="bi bi-mouse2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="font-size: 1.5rem">Ready to play?</h2>
+
+        <!--LOAD GAME-->
+        <div class="col-12">
+            <input type="file" class="form-control m-2 w-100" id="csvFileInput" accept=".csv">
+            <button class="btn btn-primary m-2 w-100" onclick="handleFile()">Load Your Own Game <i class="bi bi-stars"></i></button>
+        </div>
+        <!--END LOAD GAME-->
+
+        <!--TOAST-->
+        <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+        <!--END TOAST-->
+
     </div>
+</div>
+
     <!--END Instructions Alert-->
 
 
     <!--BEGIN Game-->
     <div class="container mt-5">
-        <div class="row">
-            <h1 class="file-name m-2 center-text" id="file-name"></h1>
-        </div>
-        <!-- Game Board Container -->
         <div id="game-board-container"></div>
-        <!-- END Game Board Container -->
+        <div id="modals-container"></div>
     </div>
 
-    <!--Trivia Modals-->
-    <div id="modals-container"></div>
+
+    <!--BootStrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!--PapaParse-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
