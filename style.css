@@ -6,6 +6,7 @@ body, a {
     text-decoration: none;
 }
 
+
 body {
     background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(https://lh3.googleusercontent.com/pw/AP1GczOdq55YabHw33zuhpmRmEWTP3DGbxJwet8nqxmUbw_IBy39m_eprtBfdqcd90GsOjSfP6E-u2BxhWbC0Nk3W51gaGyu99mVLJs4J6_m5y9PQM676Sa_O7wzdK1Kw0p22d07RRQp9fvzT-7crUixsKWefA=w1080-h1440-s-no-gm?authuser=0);
     background-size: cover;
@@ -33,7 +34,9 @@ h1 {
 }
 
 .file-name {
-
+    color:white;
+    text-shadow: 0px 0px 20px rgba(0,0,0,1);
+    
 }
 
 /*Card Positioning and Sizing*/
