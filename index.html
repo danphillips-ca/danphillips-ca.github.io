@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <title>Dan Phillips</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Hristo's Loyal Bison Slugs - Trivia!</title>
 
-    <!-- Google Fonts -->
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-   
+
+
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body class="home-image">
-    <div class="container-flex m-2 full-height">
-        <div class="row mb-5 mt-auto">
-        <div class="card col-xl-5 opacity-75 overflow-auto"><!--Why isn't overflow-auto working? Overflow is set to hidden at body.-->
-            <h1 class="card-header">Hi! I'm Dan.</h1>
-                <div class="card-body">
-                <p>
-                I have been a public servant, an educator, an administrator, a non-profit board member, and a consultant to industry. I have touched sectors in health, oceans, technology, tourism, and faith.
-                </p>    
-                <p>
-                This website is a personal portfolio where I flesh out my thoughts and play with web design.
-                </p>
-            </div>
-            <div class="card-footer btn-group d-flex" aria-label="Related Pages">
-                <a href="https://orcid.org/0000-0002-0386-0132" class="btn btn-outline-primary flex-fill text-center">
-                    <i class="fa-brands fa-orcid"></i> 0000-0002-0386-0132
-                </a>
-                <a href="https://bsky.app/profile/danphillips.ca" class="btn btn-outline-primary flex-fill text-center">
-                    <i class="fa-brands fa-bluesky"></i> danphillips.ca
-                </a>
-<!--                <a href="/vita.html" class="btn btn-outline-primary flex-fill text-center">
-                    <i class="fa-solid fa-file"></i> CV
-                </a>-->
-            </div>
+<body>
+<!--Instructions Alert-->
+    <div class="container mt-5">
+        <div class="alert alert-warning alert-dismissible col-6"  style="min-width:700px" role="alert">
+            <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h1 class="mb-4 text-center"><span style="font-size:.6em;">Hristo's Loyal</span><br/> Bison Slugs <br/><span style="font-size:.6em;">(a trivia club)</span></h1>
+            <p">This tool was originally created for Hristo's Loyal Bison Slugs - my trivia team in Halifax established in 2022. Files that you load into this game rendered completely by your browser; nothing is transferred from your computer.</p>
+
+            <h2 style="font-size: 20px">Instructions</h2>
+            <p style="margin: 0;">Use this template to populate trivia questions.</p>
+        
+            <a href="The Greatest Trivia Game of All Time.csv" download class="btn btn-primary m-2 w-25">Download Template</a>
+
+            <p>Each tile requires a unique question and answer and must have a unique point value within its category. You can add more questions within the category, but only four categories - any more and it will not load properly.</p>
+            <p>This is a work in progress. I hope to make it so that you can include media such as URLs for images or embed codes for youtube videos. If you are not using media, keep those cells blank.</p>
+
+            <!-- TODO: Provide Example Files
+            <p>Need an example to get started? Try these!</p>
+            <a href="A Very Trivia Holiday Season.csv" download class="btn btn-primary m-2 w-25">Example 1: The Holiday Special</a>
+            <a href="Fast Food.csv" download class="btn btn-primary m-2 w-25">Example 2: You Are What You Eat</a>
+        
+            <p>When you're ready, load your file here.</p>
+            -->
+
+            <!--LOAD GAME-->
+            <input type="file" class="form-control m-2 w-50" id="csvFileInput" accept=".csv">
+            <button class="btn btn-primary m-2 w-25" onclick="handleFile()">Load Your Game</button>
+            <!--END LOAD GAME-->
+            
+            <!--TOAST-->
+            <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+            <!--END TOAST-->
+
         </div>
+                                  
+        <div id="output" class="table-responsive"></div>
     </div>
-</div>
-    
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!--END Instructions Alert-->
+
+
+    <!--BEGIN Game-->
+    <div class="container mt-5">
+        <div class="row">
+            <h1 class="file-name m-2 center-text" id="file-name"></h1>
+        </div>
+        <!-- Game Board Container -->
+        <div id="game-board-container"></div>
+        <!-- END Game Board Container -->
+    </div>
+
+    <!--Trivia Modals-->
+    <div id="modals-container"></div>
+
+    <!--PapaParse-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <!--My Scripts-->
+    <script src="script.js"></script>
+
 
 </body>
 </html>

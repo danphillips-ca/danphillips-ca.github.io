@@ -1,0 +1,91 @@
+
+/* Game Grid*/
+
+body, a {
+    background-color: #eee;;
+    text-decoration: none;
+}
+
+.game-board {
+    min-width:770px;
+    background-color: black;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/*Game Title*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.file-name {
+
+}
+
+/*Card Positioning and Sizing*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*All Cards*/
+.card, .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #0055AA;
+    border: none;
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    color: #ffcc00;
+    font-size: 50px;
+    flex-direction: column; /*Necessary if categories break lines*/
+    height: 100%; /*Necessary if categories break lines*/
+}
+
+.category-label .card-body {
+    color: white;
+    font-size: 30px;
+}
+
+/*Close button for alert*/
+.alert {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    border: none;
+    background:none;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+
+/*Question and Answer Modals*/
+.modal-content {
+    width:750px;
+}
+
+.modal-dialog {
+    height: 80vh;
+}
+
+.modal-body {
+    font-size: 40px;
+}
