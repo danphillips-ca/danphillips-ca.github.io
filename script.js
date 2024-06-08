@@ -72,23 +72,40 @@ function parseCSVData(data) {
 
     const triviaData = [];
 
-    questionsAndAnswers.forEach(row => {
+    for (let i = 0; i < questionsAndAnswers.length; i++) {
+        const row = questionsAndAnswers[i];
         const id = row[0]; // First column in each row
-        const isQuestion = id.endsWith('Q');
         const value = parseInt(id.split('-')[0]);
+        const isQuestion = id.endsWith('Q');
+        const isQuestionMedia = id.endsWith('QM');
+        const isAnswer = id.endsWith('A');
+        const isAnswerMedia = id.endsWith('AM');
 
         headers.slice(1).forEach((category, index) => {
-            triviaData.push({
-                category: category,
-                value: value,
-                question: isQuestion ? row[index + 1] : null,
-                answer: !isQuestion ? row[index + 1] : null
-            });
-        });
-    });
+            if (isQuestion || isQuestionMedia || isAnswer || isAnswerMedia) {
+                let existingEntry = triviaData.find(item => item.category === category && item.value === value);
 
-    return triviaData.filter(item => item.question || item.answer);
+                if (!existingEntry) {
+                    existingEntry = { category: category, value: value };
+                    triviaData.push(existingEntry);
+                }
+
+                if (isQuestion) {
+                    existingEntry.question = row[index + 1];
+                } else if (isQuestionMedia) {
+                    existingEntry.questionMedia = row[index + 1];
+                } else if (isAnswer) {
+                    existingEntry.answer = row[index + 1];
+                } else if (isAnswerMedia) {
+                    existingEntry.answerMedia = row[index + 1];
+                }
+            }
+        });
+    }
+
+    return triviaData.filter(item => item.question || item.answer || item.questionMedia || item.answerMedia);
 }
+
 
 function createGameBoard(triviaData, headers) {
     const gameBoardContainer = document.getElementById('game-board-container');
@@ -100,7 +117,7 @@ function createGameBoard(triviaData, headers) {
 
     // Create category container
     const categoryContainer = document.createElement('div');
-    categoryContainer.classList.add('row', 'mb-4', 'category-label');
+    categoryContainer.classList.add('row', 'mb-4', 'mt-4','category-label');
     categoryContainer.id = 'category-container';
     createCategoryLabels(categoryContainer, headers);
 
@@ -136,7 +153,7 @@ function createGrid(triviaData, gridContainer) {
 
     uniqueValues.forEach(value => {
         const row = document.createElement('div');
-        row.classList.add('row', 'mb-4');
+        row.classList.add('row', 'mb-4', 'mt-4');
         
         uniqueCategories.forEach((category, index) => {
             const categoryLower = category.toLowerCase().replace(/ /g, '-');
@@ -162,9 +179,11 @@ function createModals(triviaData) {
 
     triviaData.forEach(item => {
         const categoryLower = item.category ? item.category.toLowerCase().replace(/ /g, '-') : '';
+        
         if (item.question) {
+            const questionMediaHTML = (item.questionMedia && item.questionMedia.trim() !== '') ? `<img src="${item.questionMedia}" alt="Question Media" class="img-fluid">` : '';
             const questionModal = `
-            <div class="modal fade" id="${categoryLower}-${item.value}" tabindex="-1" aria-labelledby="trivia question" aria-hidden="true">
+            <div class="modal fade" id="${categoryLower}-${item.value}" tabindex="-1" aria-labelledby="trivia-question" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -173,6 +192,7 @@ function createModals(triviaData) {
                         </div>
                         <div class="modal-body">
                             <p>${item.question}</p>
+                            ${questionMediaHTML}
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -186,8 +206,9 @@ function createModals(triviaData) {
         }
 
         if (item.answer) {
+            const answerMediaHTML = (item.answerMedia && item.answerMedia.trim() !== '') ? `<img src="${item.answerMedia}" alt="Answer Media" class="img-fluid">` : '';
             const answerModal = `
-            <div class="modal fade" id="${categoryLower}-${item.value}A" tabindex="-1" aria-labelledby="trivia answer" aria-hidden="true">
+            <div class="modal fade" id="${categoryLower}-${item.value}A" tabindex="-1" aria-labelledby="trivia-answer" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -196,6 +217,7 @@ function createModals(triviaData) {
                         </div>
                         <div class="modal-body">
                             <p>${item.answer}</p>
+                            ${answerMediaHTML}
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -214,6 +236,12 @@ function createModals(triviaData) {
         new bootstrap.Modal(modal);
     });
 }
+
+
+
+
+
+
 
 function closeAlertBox() {
     const closeButton = document.querySelector('.alert .close');
