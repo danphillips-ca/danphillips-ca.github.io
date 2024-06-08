@@ -6,11 +6,25 @@ body, a {
     text-decoration: none;
 }
 
+body {
+    background-image: url("images/IMG_20220227_0019.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .game-board {
     min-width:770px;
     background-color: black;
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+.custom-alert {
+    background-color: #fff; /* Custom background color */
+    color: #363636; /* Custom text color */
+    border-color: #363636; /* Custom border color */
+    background-color: #cccccc;
+    opacity: 90%
 }
 
 /*Game Title*/
