@@ -1,8 +1,4 @@
-
-
-
-
-//Generate title, grid, and modals from a user-supplied csv.
+// Generate title, grid, and modals from a user-supplied CSV.
 document.getElementById('csvFileInput').addEventListener('change', handleFileSelect, false);
 
 function handleFileSelect(event) {
@@ -20,6 +16,10 @@ function handleFileSelect(event) {
     } else {
         showToast("Error", "Please select a CSV file.", "danger");
     }
+}
+
+function sanitizeCategoryName(category) {
+    return category.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 }
 
 function handleFile() {
@@ -106,7 +106,6 @@ function parseCSVData(data) {
     return triviaData.filter(item => item.question || item.answer || item.questionMedia || item.answerMedia);
 }
 
-
 function createGameBoard(triviaData, headers) {
     const gameBoardContainer = document.getElementById('game-board-container');
     gameBoardContainer.innerHTML = ''; // Clear existing game board
@@ -117,7 +116,7 @@ function createGameBoard(triviaData, headers) {
 
     // Create category container
     const categoryContainer = document.createElement('div');
-    categoryContainer.classList.add('row', 'mb-4', 'mt-4','category-label');
+    categoryContainer.classList.add('row', 'mb-4', 'mt-4', 'category-label');
     categoryContainer.id = 'category-container';
     createCategoryLabels(categoryContainer, headers);
 
@@ -156,10 +155,11 @@ function createGrid(triviaData, gridContainer) {
         row.classList.add('row', 'mb-4', 'mt-4');
         
         uniqueCategories.forEach((category, index) => {
-            const categoryLower = category.toLowerCase().replace(/ /g, '-');
+            const sanitizedCategory = sanitizeCategoryName(category);
+            console.log(`Creating card for category: ${sanitizedCategory}, value: ${value}`); // Debug
             const card = `
                 <div class="col-3">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#${categoryLower}-${value}" onclick="changeColor(this)">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#${sanitizedCategory}-${value}" onclick="changeColor(this)">
                         <div class="card">
                             <div class="card-body">${value}</div>
                         </div>
@@ -173,17 +173,61 @@ function createGrid(triviaData, gridContainer) {
     });
 }
 
+function generateMediaHTML(media) {
+    if (!media || media.trim() === '') return '';
+
+    const mediaLower = media.toLowerCase();
+    const isAudio = mediaLower.endsWith('.mp3') || mediaLower.endsWith('.wav');
+    const isVideo = mediaLower.endsWith('.mp4') || mediaLower.endsWith('.webm');
+    const isYouTube = mediaLower.includes('youtu.be') || mediaLower.includes('youtube.com') || mediaLower.includes('youtube.com/embed');
+
+    if (isAudio) {
+        return `<audio controls class="img-fluid" style="max-height: 500px;">
+                    <source src="${media}" type="audio/${mediaLower.endsWith('.mp3') ? 'mpeg' : 'wav'}">
+                    Your browser does not support the audio element.
+                </audio>`;
+    } else if (isVideo) {
+        return `<video controls class="img-fluid" style="max-height: 500px;">
+                    <source src="${media}" type="video/${mediaLower.endsWith('.mp4') ? 'mp4' : 'webm'}">
+                    Your browser does not support the video tag.
+                </video>`;
+    } else if (isYouTube) {
+        let videoId = null;
+        if (media.includes('v=')) {
+            videoId = media.split('v=')[1];
+        } else if (media.includes('youtu.be/')) {
+            videoId = media.split('youtu.be/')[1];
+        } else if (media.includes('youtube.com/embed/')) {
+            videoId = media.split('youtube.com/embed/')[1];
+        }
+
+        if (videoId) {
+            const ampersandPosition = videoId.indexOf('&');
+            const cleanVideoId = ampersandPosition !== -1 ? videoId.substring(0, ampersandPosition) : videoId;
+            return `<iframe width="560" height="315" src="https://www.youtube.com/embed/${cleanVideoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="img-fluid" style="max-height: 500px;"></iframe>`;
+        }
+    } else {
+        return `<img src="${media}" alt="Media" class="img-fluid" style="max-height: 500px;">`;
+    }
+
+    return '';
+}
+
+
+
 function createModals(triviaData) {
     const container = document.getElementById('modals-container');
     container.innerHTML = ''; // Clear existing modals
 
     triviaData.forEach(item => {
-        const categoryLower = item.category ? item.category.toLowerCase().replace(/ /g, '-') : '';
-        
+        const sanitizedCategory = sanitizeCategoryName(item.category);
+        console.log(`Creating modal for category: ${sanitizedCategory}, value: ${item.value}`); // Debug
+
         if (item.question) {
-            const questionMediaHTML = (item.questionMedia && item.questionMedia.trim() !== '') ? `<img src="${item.questionMedia}" alt="Question Media" class="img-fluid">` : '';
+            console.log(`Question media for ${sanitizedCategory}-${item.value}:`, item.questionMedia); // Log media
+            const questionMediaHTML = item.questionMedia ? generateMediaHTML(item.questionMedia) : '';
             const questionModal = `
-            <div class="modal fade" id="${categoryLower}-${item.value}" tabindex="-1" aria-labelledby="trivia-question" aria-hidden="true">
+            <div class="modal fade" id="${sanitizedCategory}-${item.value}" tabindex="-1" aria-labelledby="trivia-question" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -196,7 +240,7 @@ function createModals(triviaData) {
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${categoryLower}-${item.value}A">Reveal Answer</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${sanitizedCategory}-${item.value}A">Reveal Answer</button>
                         </div>
                     </div>
                 </div>
@@ -206,9 +250,10 @@ function createModals(triviaData) {
         }
 
         if (item.answer) {
-            const answerMediaHTML = (item.answerMedia && item.answerMedia.trim() !== '') ? `<img src="${item.answerMedia}" alt="Answer Media" class="img-fluid">` : '';
+            console.log(`Answer media for ${sanitizedCategory}-${item.value}A:`, item.answerMedia); // Log media
+            const answerMediaHTML = item.answerMedia ? generateMediaHTML(item.answerMedia) : '';
             const answerModal = `
-            <div class="modal fade" id="${categoryLower}-${item.value}A" tabindex="-1" aria-labelledby="trivia-answer" aria-hidden="true">
+            <div class="modal fade" id="${sanitizedCategory}-${item.value}A" tabindex="-1" aria-labelledby="trivia-answer" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -231,7 +276,7 @@ function createModals(triviaData) {
     });
 
     // Initialize Bootstrap modals after creation
-    var modals = document.querySelectorAll('.modal');
+    const modals = document.querySelectorAll('.modal');
     modals.forEach(modal => {
         new bootstrap.Modal(modal);
     });
@@ -243,6 +288,9 @@ function createModals(triviaData) {
 
 
 
+
+
+// Close the alert box
 function closeAlertBox() {
     const closeButton = document.querySelector('.alert .close');
     if (closeButton) {
@@ -250,9 +298,6 @@ function closeAlertBox() {
     }
 }
 
-
-
-// Close the alert box
 document.addEventListener('DOMContentLoaded', function() {
     var closeButtons = document.querySelectorAll('.alert .close');
     closeButtons.forEach(function(button) {

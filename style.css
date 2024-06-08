@@ -97,5 +97,28 @@ h1 {
 }
 
 .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-size: 40px;
+}
+
+.modal-body > p,
+.modal-body > img,
+.modal-body > video,
+.modal-body > audio,
+.modal-body > iframe {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.modal-body img,
+.modal-body video,
+.modal-body audio,
+.modal-body iframe {
+    min-height: 300px;
+    max-height: 500px;
+    height: auto;
 }
