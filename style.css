@@ -7,11 +7,11 @@ body, a {
 }
 
 .game-board {
-    min-width:770px;
     background-color: black;
     padding-left: 3rem;
     padding-right: 3rem;
 }
+
 
 .custom-alert {
     background-color: #fff; /* Custom background color */
@@ -46,25 +46,44 @@ h1 {
 
 
 /*All Cards*/
-.card, .card-body {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background: #0055AA;
     border: none;
-    text-shadow: 1px 1px 5px black;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
-    color: #ffcc00;
-    font-size: 50px;
     flex-direction: column; /*Necessary if categories break lines*/
     height: 100%; /*Necessary if categories break lines*/
 }
 
-.category-label .card-body {
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+
+.card-value {
+    color: #ffcc00;
+    font-size: max(3vw, 28px); /* Ensures font-size is at least 16px */
+}
+
+@media (max-width: 933px) { 
+    /* 3vw will be less than 28px when viewport width is less than 933px */
+    .card-category {
+        font-weight: normal;
+    }
+}
+
+.card-category {
     color: white;
-    font-size: 30px;
+    font-size: max(2vw, 10px); /* Ensures font-size is at least 16px */
 }
 
 /*Close button for alert*/
@@ -88,12 +107,10 @@ h1 {
 
 
 /*Question and Answer Modals*/
-.modal-content {
-    width:750px;
-}
+
 
 .modal-dialog {
-    height: 80vh;
+    width: 80%;
 }
 
 .modal-body {
@@ -102,7 +119,7 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 40px;
+    font-size: max(3vw, 28px); /* Ensures font-size is at least 16px */
 }
 
 .modal-body > p,
@@ -121,4 +138,19 @@ h1 {
     min-height: 300px;
     max-height: 500px;
     height: auto;
+}
+
+/* Custom width and height for modals */
+@media (min-width: 768px) {
+    .modal-dialog {
+        max-width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+    .modal-content {
+        height: 100%;
+    }
+    .modal-body {
+        overflow-y: auto;
+    }
 }

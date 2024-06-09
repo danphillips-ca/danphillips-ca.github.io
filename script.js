@@ -191,7 +191,7 @@ function createGameBoard(triviaData, headers, fileName) {
 
     // Create file name header
     const fileNameHeader = document.createElement('h1');
-    fileNameHeader.classList.add('file-name', 'm-2', 'center-text');
+    fileNameHeader.classList.add('file-name', 'm-2', 'text-center');
     fileNameHeader.textContent = fileName;
 
     // Append file name header to the game board container
@@ -199,11 +199,11 @@ function createGameBoard(triviaData, headers, fileName) {
 
     // Create game board div
     const gameBoard = document.createElement('div');
-    gameBoard.classList.add('p-4', 'game-board', 'rounded');
+    gameBoard.classList.add('game-board', 'p-4', 'rounded');
 
     // Create category container
     const categoryContainer = document.createElement('div');
-    categoryContainer.classList.add('row', 'mb-4', 'mt-4', 'category-label');
+    categoryContainer.classList.add('row', 'mb-1', 'category-label');
     categoryContainer.id = 'category-container';
     createCategoryLabels(categoryContainer, headers);
 
@@ -224,9 +224,9 @@ function createGameBoard(triviaData, headers, fileName) {
 function createCategoryLabels(categoryContainer, headers) {
     headers.slice(1).forEach((category, index) => {
         const categoryCard = `
-            <div class="col-3">
+            <div class="col-3 p-2">
                 <div class="card">
-                    <div class="card-body" id="category${index + 1}">${category}</div>
+                    <div class="card-body card-category" id="category${index + 1}">${category}</div>
                 </div>
             </div>
         `;
@@ -240,15 +240,15 @@ function createGrid(triviaData, gridContainer) {
 
     uniqueValues.forEach(value => {
         const row = document.createElement('div');
-        row.classList.add('row', 'mb-4', 'mt-4');
+        row.classList.add('row', 'mt-md-2');
         
         uniqueCategories.forEach((category) => {
             const sanitizedCategory = sanitizeCategoryName(category);
             const card = `
-                <div class="col-3">
+                <div class="col-3 p-2">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#${sanitizedCategory}-${value}" onclick="changeColor(this)">
                         <div class="card">
-                            <div class="card-body">${value}</div>
+                            <div class="card-body card-value">${value}</div>
                         </div>
                     </a>
                 </div>
