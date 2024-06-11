@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta http-equiv="refresh" content="0; url=https://trivia.danphillips.ca" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hristo's Loyal Bison Slugs - Trivia!</title>
+
+    <!-- Dublin Core Metadata -->
+    <meta name="DC.title" content="Bingo for All">
+    <meta name="DC.creator" content="Dan Phillips">
+    <meta name="DC.subject" content="Bingo, Game, Fun, Social">
+    <meta name="DC.description" content="A Social Bingo game designed for classroom activities, meet-and-greets, or heck - just plain old fashion BINGO.">
+    <meta name="DC.publisher" content="Dan Phillips">
+    <meta name="DC.contributor" content="Dan Phillips">
+    <meta name="DC.date" content="2024-06-08">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.identifier" content="https://bingo.danphillips.ca/">
+    <meta name="DC.language" content="en">
+    <meta name="DC.coverage" content="Worldwide">
+    <meta name="DC.rights" content="CC-BY 4.0">
+    <meta name="DC.creator.ORCID" content="https://orcid.org/0000-0002-0386-0132">
+    <meta name="DC.contributor.ai" content="AI-assisted development">
+    <meta name="DC.contributor" content="Special thanks to Courtney Ellsworth at the Saskatchewan Health Authority for inspiring this project.">
+
+    <!-- Open Graph Metadata for Social Media -->
+    <meta property="og:title" content="Bingo for All">
+    <meta property="og:description" content="A Social Bingo game designed for classroom activities, meet-and-greets, or heck - just plain old fashion BINGO.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bingo.danphillips.ca/">
+    <meta property="og:image" content="https://bingo.danphillips.ca/images/social.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <title>Bingo For All</title>
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,93 +40,74 @@
 
     <!--Bootstrap CDN - script is below-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-
 
     <!--Custom Styles-->
     <link rel="stylesheet" href="style.css">
 
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
 </head>
 
 <body>
-<!--Instructions Alert-->
-<div class="container mt-5">
-    <div class="alert custom-alert alert-dismissible col-md-6 col-12" role="alert" aria-label="Introduction and instructions">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        <h1 class="mb-4 text-center"><span style="font-size:.6em;">Hristo's Loyal</span><br/> Bison Slugs <br/><span style="font-size:.6em;">(a trivia club)</span></h1>
-        <p>This was originally created for Hristo's Loyal Bison Slugs (est. 2022) - my trivia team in Halifax. Files that you load into this game are rendered completely by your browser; nothing is transferred from your computer.</p>
-
-        <h2 style="font-size: 1.5rem">Instructions</h2>
-        <p style="margin: 0;">Use this template to populate trivia questions.</p>
-
-        <div class="col-12">
-            <a href="The Greatest Trivia Game of All Time.csv" download class="btn btn-primary m-2 w-100">Download Template <i class="bi bi-file-earmark-spreadsheet ms-1"></i></a>
-        </div>
-        <p>Setup:</p>
-        <ul>
-            <li>You can have up to four unique categories.</li>
-            <li>Questions (Q), Answers (A), Question Media (QM), and Answer Media (AM) must correspond to the same unique point value within their category. (See template.)</li>
-            <li>To include media, provide the complete url. YouTube, images, audio, and video are generally supported. If you don't want media, leave those cells blank.</li>
-        </ul>
-
-        <p>Need an example to get started? Try these!</p>
-        <div class="container">
-            <div class="row mb-3 ms-0 me-0">
-                <div class="col-lg-6 mb-3 mb-lg-0 text-center">
-                    <h3 style="font-size: 1rem; font-weight: bold;">Hristo Saves Christmas</h3>
-                    <div class="d-flex flex-column">
-                        <a href="Examples/Hristo Saves Christmas.csv" download class="btn btn-primary w-100 d-flex justify-content-center align-items-center" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">Download <i class="bi bi-file-earmark-spreadsheet ms-1"></i></a>
-                        <button class="btn btn-secondary w-100" style="border-top-left-radius: 0; border-top-right-radius: 0;" onclick="loadSample('Examples/Hristo Saves Christmas.csv')">Play Now <i class="bi bi-mouse2"></i></button>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <h3 style="font-size: 1rem; font-weight: bold;">Fast Food Extravaganza</h3>
-                    <div class="d-flex flex-column">
-                        <a href="Examples/The Bison Slugs Do Takeout.csv" download class="btn btn-primary w-100 d-flex justify-content-center align-items-center" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">Download <i class="bi bi-file-earmark-spreadsheet ms-1"></i></a>
-                        <button class="btn btn-secondary w-100" style="border-top-left-radius: 0; border-top-right-radius: 0;" onclick="loadSample('Examples/The Bison Slugs Do Takeout.csv')">Play Now <i class="bi bi-mouse2"></i></button>
-                    </div>
-                </div>
+    <nav class="navbar navbar-light bg-light fixed-right">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleFullscreen()">Toggle Fullscreen</a>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <h2 style="font-size: 1.5rem">Ready to play?</h2>
-
-        <!--LOAD GAME-->
-        <div class="col-12">
-            <input type="file" class="form-control m-2 w-100" id="csvFileInput" accept=".csv">
-            <button class="btn btn-primary m-2 w-100" onclick="handleFile()">Load Your Own Game <i class="bi bi-stars"></i></button>
-        </div>
-        <!--END LOAD GAME-->
-
-        <!--TOAST-->
-        <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
-        <!--END TOAST-->
-
-    </div>
-</div>
+    </nav>
 
     <!--END Instructions Alert-->
+    <div class="container mt-5 position-relative">
+        <div class="alert custom-alert alert-dismissible col-md-6 col-12 position-relative" role="alert" aria-label="Introduction and instructions">
 
+            <h1 class="mb-4 text-center"><span style="font-size:.6em;">Bingo For All</span></h1>
+            <h2>Instructions</h2>
+            <p>Download the template. Populate the title (#) headings (##) with whatever you want.</p>
+            <p>Each line below that heading will be a tile that can randomly appear on a BINGO card. The typical BINGO card has 15 options per column, but you can break the rules. I won't judge.</p>
 
-    <!--BEGIN Game-->
-    <div class="container mt-5">
-        <div id="game-board-container"></div>
-        <div id="modals-container"></div>
+            <h2 style="font-size: 1.5rem">Ready to play?</h2>
+            <!-- Instructions -->
+            <input type="file" id="fileInput" accept=".txt, .md" class="form-control mb-3">
+            <button id="loadFileButton" class="btn btn-primary">Load File</button>
+            <div id="shareableUrlContainer" class="mt-3"></div>
+
+            <row>
+                <div class="col-lg-12 text-center">
+                    <h3 style="font-size: 1rem; font-weight: bold;">Try one!</h3>
+                    <div class="d-flex flex-column">
+                        <a href="https://bingo.danphillips.ca/index.html?data=eyJmaWxlTmFtZSI6IlBsYWluIE9sZCBGYXNoaW9uZWQgQmluZ28iLCJGcmVlIjpbIkZyZWUgU3BhY2UhIiwiWW91IFJvY2shIiwiVGhpcyBvbmUgaXMgb24gdGhlIGhvdXNlISJdLCJCIjpbIjEiLCIyIiwiMyIsIjQiLCI1IiwiNiIsIjciLCI4IiwiOSIsIjEwIiwiMTEiLCIxMiIsIjEzIiwiMTQiLCIxNSJdLCJJIjpbIjE2IiwiMTciLCIxOCIsIjE5IiwiMjAiLCIyMSIsIjIyIiwiMjMiLCIyNCIsIjI1IiwiMjYiLCIyNyIsIjI4IiwiMjkiLCIzMCJdLCJOIjpbIjMxIiwiMzIiLCIzMyIsIjM0IiwiMzUiLCIzNiIsIjM3IiwiMzgiLCIzOSIsIjQwIiwiNDEiLCI0MiIsIjQzIiwiNDQiLCI0NSJdLCJHIjpbIjQ2IiwiNDciLCI0OCIsIjQ5IiwiNTAiLCI1MSIsIjUyIiwiNTMiLCI1NCIsIjU1IiwiNTYiLCI1NyIsIjU4IiwiNTkiLCI2MCJdLCJPIjpbIjYxIiwiNjIiLCI2MyIsIjY0IiwiNjUiLCI2NiIsIjY3IiwiNjgiLCI2OSIsIjcwIiwiNzEiLCI3MiIsIjczIiwiNzQiLCI3NSJdfQ" class="btn btn-primary my-2">Boring Ol' Bingo <i class="bi bi-mouse2"></a>
+                        <a href="https://bingo.danphillips.ca/index.html?data=JTdCJTIyZmlsZU5hbWUlMjIlM0ElMjJNZWV0JTIwYW5kJTIwR3JlZXQlMjBCSU5HTyElMjIlMkMlMjJGcmVlJTIyJTNBJTVCJTIySXMlMjB3b3J0aHklMjBvZiUyMGxvdmUuJTIwKFB1dCUyMHlvdXIlMjBvd24lMjBuYW1lJTIwaGVyZSEpJTIyJTJDJTIyQ2FuJTIwa2lzcyUyMHRoZWlyJTIwZWxib3cuJTIwKE9rYXklMkMlMjBubyUyMG9uZSUyMGNhbiUyMGRvJTIwdGhhdC4lMjBZb3UlMjBjYW4lMjBoYXZlJTIwdGhpcyUyMG9uZSUyMGZyZWUhKSUyMiUyQyUyMklzJTIwZ29pbmclMjB0byUyMHdpbiUyMHRoaXMlMjBCSU5HTyUyMGdhbWUuJTIwKFB1dCUyMHlvdXIlMjBuYW1lJTIwaGVyZSUyMGFuZCUyMGNvbnNpZGVyJTIwdGhpcyUyMGElMjBmcmVlJTIwc3BhY2UuJTIwSWYlMjBpdCUyMHR1cm5zJTIwb3V0JTIweW91J3JlJTIwd3JvbmclMkMlMjBubyUyMG9uZSUyMHdpbGwlMjBldmVyJTIwa25vdyEpJTIyJTJDJTIyRnJlZSUyMFRpbGUlMjAoVGlsZSUyMGRpZCUyMG5vdGhpbmclMjB3cm9uZyEpJTIyJTVEJTJDJTIyQmFja2dyb3VuZCUyMiUzQSU1QiUyMkNpdGl6ZW4lMjBvZiUyMEFub3RoZXIlMjBDb3VudHJ5JTIyJTJDJTIyQWxsZXJnaWVzJTIyJTJDJTIyVGF0dG9vZWQlMjIlMkMlMjJCaXJ0aGRheSUyMG9uJTIwYSUyMEhvbGlkYXklMjIlMkMlMjJNb3ZlZCUyMHRvJTIwdGhlJTIwQ2l0eSUyMFRoaXMlMjBZZWFyJTIyJTJDJTIyTWlkZGxlJTIwQ2hpbGQlMjIlMkMlMjJMaWNlbnNlJTIwZm9yJTIwU29tZXRoaW5nJTIwT3RoZXIlMjB0aGFuJTIwRHJpdmluZyUyMiUyQyUyMkNvbG91cmJsaW5kJTIyJTJDJTIyV2VudCUyMHRvJTIwQ29sbGVnZSUyMiUyQyUyMkdyZXclMjBVcCUyMGluJTIwYSUyMFNtYWxsJTIwVG93biUyMiUyQyUyMk1pbGl0YXJ5JTIwQnJhdCUyMiU1RCUyQyUyMkludGVyZXN0cyUyMiUzQSU1QiUyMktuaXRzJTIyJTJDJTIyUGFpbnRzJTIyJTJDJTIyUnVubmVyJTIyJTJDJTIyUGxheXMlMjBvbiUyMGElMjBUZWFtJTIyJTJDJTIyUmVhZHMlMjBIb3Jyb3IlMjIlMkMlMjJQbGF5cyUyMER1bmdlb25zJTIwYW5kJTIwRHJhZ29ucyUyMiUyQyUyMkhpa2VyJTIyJTJDJTIyUmlkZXMlMjBhJTIwTW90b3JjeWNsZSUyMiUyQyUyMkhhdGVzJTIwQnJvY2NvbGklMjIlMkMlMjJMb3ZlcyUyMEJyb2Njb2xpJTIyJTJDJTIyRWF0cyUyMEZyaWVzJTIwV2l0aCUyMFZpbmVnYXIlMjIlMkMlMjJSZWFkcyUyMHRoZSUyMGJvb2slMjBCZWFyJTIyJTJDJTIyV2F0Y2hlZCUyMFRoZSUyMEJlYXIlMjBvbiUyMERpc25leSUyMFBsdXMiJTJDJTIyTm90YWJsZSUyMEFjaGlldmVtZW50cyUyMiUzQSU1QiUyMldvbiUyMGFuJTIwQXdhcmQlMjIlMkMlMjJQdWJsaXNoZWQlMjBhJTIwQm9vayUyMG9yJTIwQXJ0aWNsZSUyMiUyQyUyMkhvbGRzJTIwYSUyME1hcnRpYWwlMjBBcnQlMjBSYW5rJTIyJTJDJTIyU3BlYWtzJTIwQW5vdGhlciUyMExhbmd1YWdlJTIwRmx1ZW50bHklMjIlMkMlMjJPdmVyY2FtZSUyMGElMjBGZWFyJTIyJTJDJTIyQWN0ZWQlMjBpbiUyMGElMjBQbGF5JTIwb3IlMjBNdXNpY2FsJTIyJTJDJTIyTWVudG9yJTIyJTJDJTIyU2hvd2Nhc2VkJTIwQXJ0JTIwaW4lMjBhbiUyMEV4aGliaXQlMjIlMkMlMjJWb2x1bnRlZXJzJTIwd2l0aCUyMGElMjBOb24tUHJvZml0JTIyJTJDJTIyQ29ycmVjdGx5JTIwU3BlbGxzJTIwRnVzY2hpYSUyMG9uJTIwdGhlJTIwRmlyc3QlMjBUcnklMjIlMkMlMjJHdWlsdHklMjBQbGVhc3VyZXMlMjIlM0ElNUIlMjJBdXRob3JlZCUyMGElMjBGYW5maWMiJTJDJTIyV2F0Y2hlcyUyMHRoZSUyMFNhbWUlMjBNb3ZpZSUyMG9yJTIwU2hvdyUyMFJlcGVhdGVkbHklMjIlMkMlMjJFYXRzJTIwaW4lMjBCZWQlMjIlMkMlMjJTaW5ncyUyMGluJTIwdGhlJTIwU2hvd2VyJTIyJTJDJTIyV2F0Y2hlcyUyMFJlYWxpdHklMjBUViUyMiUyQyUyMkJ1YmJsZSUyMEJhdGhlciUyMiUyQyUyMlBsYXlzJTIwVmlkZW8lMjBHYW1lcyUyMGZvciUyMEhvdXJzJTIyJTJDJTIyRm9sbG93cyUyMEhvcm9zY29wZXMlMjBpbiUyMFNlY3JldCUyMiUyQyUyMlNsZWVwcyUyMHdpdGglMjBhJTIwU3R1ZmZlZCUyMEFuaW1hbCUyMiUyQyUyMlNwaWVzJTIwb24lMjB0aGUlMjBOZWlnaGJvdXJzJTIyJTJDJTIyQ2FuJUUyJTgwJTk5dCUyMEtlZXAlMjBhJTIwUGxhbnQlMjBBbGl2ZSUyMGJ1dCUyMERvZXNuJUUyJTgwJTk5dCUyMFN0b3AlMjBUcnlpbmchJTIyJTJDJTIyRmF2b3VyaXRlJTIwU25hY2slMjBUaGF0JTIwTW9zdCUyMFBlb3BsZSUyMEZpbmQlMjBHcm9zcyUyMiUyQyUyMkRhbmNlcyUyMFdoZW4lMjBOb2JvZHkncyUyMFdhdGNoaW5nJTIyJTVEJTJDJTIyT2RkaXRpZXMlMjIlM0ElNUIlMjJXZWFycyUyME1pc21hdGNoZWQlMjBTb2NrcyUyMiUyQyUyMkRhbmNlcyUyMExpa2UlMjBOb2JvZHklRTIlODAlOTlzJTIwV2F0Y2hpbmclMjAoQnV0JTIwRXZlcnlib2R5JUUyJTgwJTk5cyUyMFdhdGNoaW5nKSUyMiUyQyUyMkdldHMlMjB0aGUlMjBBU01SJTIwVGluZ2xpZXMlMjIlMkMlMjJDaGVja3MlMjB0aGUlMjBPdmVuJTIwVGhyZWUlMjBUaW1lcyUyMEJlZm9yZSUyMExlYXZpbmclMjBIb21lJTIyJTJDJTIyQWJzdHJhY3QlMjBEcmVhbWVyJTIyJTJDJTIyUGVlcyUyMGluJTIwdGhlJTIwU2hvd2VyJTIyJTJDJTIyU3BlYWtzJTIwdG8lMjBIb3VzZXBsYW50cyUyMiUyQyUyMldlYXJzJTIwU3VuZ2xhc3NlcyUyMEluZG9vcnMlMjIlMkMlMjJDYXJyaWVzJTIwYSUyMFNtYWxsJTIwVG95JTIyJTJDJTIyT3JnYW5pemVzJTIwU3BpY2VzJTIwQWxwaGFiZXRpY2FsbHklMjIlMkMlMjJUYXBlcyUyME92ZXIlMjBMYXB0b3AlMjBDYW1lcmElMjIlMkMlMjJTbmlmZnMlMjBOZXclMjBCb29rcyUyMExvdWRseSUyMiUyQyUyMkRvb2RsZXMlMjBpbiUyMHRoZSUyME1hcmdpbnMlMjIlNUQlN0Q" class="btn btn-primary my-2">Meet and Greet Bingo <i class="bi bi-mouse2"></i></a>
+                        <a href="/index.html?data=" class="btn btn-primary my-2">Stuck in a Meeting Bingo <i class="bi bi-mouse2"></i></a>
+                    </div>
+                </div>                
+            </row>
+            
+            <!--LOAD GAME-->
+        </div>
     </div>
-
+    <!--END Instructions Alert-->
+    
+    <!--TOAST-->
+    <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+    <div id="feedback" class="alert alert-info" style="display: none;"></div>
+    <!--END TOAST-->
+    
+    <!--Generate Game-->
+    <div id="gameboardContainer" class="row justify-content-center"></div>
 
     <!--BootStrap Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <!--PapaParse-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <!--My Scripts-->
     <script src="script.js"></script>
-
-
 </body>
 </html>

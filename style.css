@@ -1,156 +1,50 @@
+:root {
+    --background-color: #363636;
+    --primary-color: #0055AA;
+    --secondary-color: #ffcc00;
+    --alert-bg-color: #cccccc;
+    --text-color: white;
+    --border-color: #363636;
+    --box-shadow-color: black;
+}
 
-/* Game Grid*/
-
+/* General Styles */
 body, a {
-    background-color: #eee;;
+    background-color: var(--background-color);
     text-decoration: none;
 }
 
-.game-board {
-    background-color: black;
-    padding-left: 3rem;
-    padding-right: 3rem;
+h2, h1 {
+    font-family: 'Playfair Display', serif;}
+
+#gameboardContainer h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: var(--text-color);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-align: center; /* Corrected property */
 }
 
+.card {
+    height: 100%;
+}
 
+.bingo-tile, .bingo-tile-free, .bingo-header .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Adjust this value as needed */
+}
+
+/* Custom Alert */
 .custom-alert {
-    background-color: #fff; /* Custom background color */
-    color: #363636; /* Custom text color */
-    border-color: #363636; /* Custom border color */
-    background-color: #cccccc;
-    opacity: 90%
+    background-color: var(--alert-bg-color); /* Custom background color */
+    color: var(--border-color); /* Custom text color */
+    border-color: var(--border-color); /* Custom border color */
 }
 
-/*Game Title*/
+/* Game Title */
 h1 {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-}
-
-.file-name {
-    color:white;
-    text-shadow: 0px 0px 20px rgba(0,0,0,1);
-    
-}
-
-/*Card Positioning and Sizing*/
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.center-text {
-    display: flex;
-    justify-content: center;
-}
-
-
-/*All Cards*/
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #0055AA;
-    border: none;
-    flex-direction: column; /*Necessary if categories break lines*/
-    height: 100%; /*Necessary if categories break lines*/
-}
-
-.card-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: none;
-    text-shadow: 1px 1px 5px black;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
-}
-
-
-.card-value {
-    color: #ffcc00;
-    font-size: max(3vw, 28px); /* Ensures font-size is at least 16px */
-}
-
-@media (max-width: 933px) { 
-    /* 3vw will be less than 28px when viewport width is less than 933px */
-    .card-category {
-        font-weight: normal;
-    }
-}
-
-.card-category {
-    color: white;
-    font-size: max(2vw, 10px); /* Ensures font-size is at least 16px */
-}
-
-/*Close button for alert*/
-.alert {
-    position: relative;
-}
-
-.close {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    border: none;
-    background:none;
-}
-
-.close:hover {
-    opacity: 1;
-}
-
-
-/*Question and Answer Modals*/
-
-
-.modal-dialog {
-    width: 80%;
-}
-
-.modal-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: max(3vw, 28px); /* Ensures font-size is at least 16px */
-}
-
-.modal-body > p,
-.modal-body > img,
-.modal-body > video,
-.modal-body > audio,
-.modal-body > iframe {
-    margin-top: 20px;
-    max-width: 100%;
-}
-
-.modal-body img,
-.modal-body video,
-.modal-body audio,
-.modal-body iframe {
-    min-height: 300px;
-    max-height: 500px;
-    height: auto;
-}
-
-/* Custom width and height for modals */
-@media (min-width: 768px) {
-    .modal-dialog {
-        max-width: 90%;
-        height: 90%;
-        margin: auto;
-    }
-    .modal-content {
-        height: 100%;
-    }
-    .modal-body {
-        overflow-y: auto;
-    }
 }
