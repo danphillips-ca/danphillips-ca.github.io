@@ -54,22 +54,22 @@ h1 {
 }
 
 
-.btn-red:hover, .btn-red:active {
+.btn-red:active, .btn-red:hover {
     background-color: #ff69b4;
     color: white;
   }
   
-  .btn-blue:hover, .btn-blue:active {
+  .btn-blue:active, .btn-blue:hover {
     background-color: #1081F6;
     color: white;
   }
   
-  .btn-green:hover, .btn-green:active {
+  .btn-green:active, .btn-green:hover {
     background-color: #A6CE39;
     color: white;
   }
   
-  .btn-purple:hover, .btn-purple:active {
+  .btn-purple:active, .btn-purple:hover {
     background-color: #4c368c;
     color: white;
   }
