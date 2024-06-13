@@ -1,0 +1,54 @@
+/* styles.css */
+
+:root {
+    /* Primary color variations */
+    --primary-color: #4c368c;
+    --primary-color-light: #fff;
+    --bg-dark: #363636;
+    --primary-color-dark: #0056b3;
+    --primary-color-hover: #0056b3;
+    --primary-color-active: #004380;
+    --primary-color-focus: #004380;
+
+}
+
+h1 {
+    color: #363636;
+    line-height: 1.2;
+    font-family: "Playfair Display", "DM Serif Text";
+    font-weight: 500;
+}
+
+
+.btn-outline-primary {
+--bs-btn-color: #363636;
+--bs-btn-border-color: #363636;
+--bs-btn-hover-color: #fff;
+--bs-btn-hover-bg: #363636;
+--bs-btn-hover-border-color: #363636;
+}
+
+.home-image {
+    background: url('/images/danphillips.webp') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-position: calc(50% - 200), calc(50% - 500px);
+}
+
+.full-height {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#backButton {
+    position: fixed;
+    background: white;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
