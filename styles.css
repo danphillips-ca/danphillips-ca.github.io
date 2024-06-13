@@ -22,7 +22,7 @@ h1 {
 
 .btn-outline-primary {
 --bs-btn-color: #363636;
---bs-btn-border-color: #363636;
+--bs-btn-border-color: #ccc;
 --bs-btn-hover-color: #fff;
 --bs-btn-hover-bg: #363636;
 --bs-btn-hover-border-color: #363636;
@@ -52,3 +52,40 @@ h1 {
     right: 20px;
     z-index: 1000;
 }
+
+
+.btn-red:hover {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .btn-blue:hover {
+    background-color: #1081F6;
+    color: white;
+  }
+  
+  .btn-green:hover {
+    background-color: #A6CE39;
+    color: white;
+  }
+  
+  .btn-purple:hover {
+    background-color: #4c368c;
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .rounded-md-top-left {
+      border-top-left-radius: .25rem !important;
+    }
+    .rounded-md-top-right {
+      border-top-right-radius: .25rem !important;
+    }
+    .rounded-md-bottom-left {
+      border-bottom-left-radius: .25rem !important;
+    }
+    .rounded-md-bottom-right {
+      border-bottom-right-radius: .25rem !important;
+    }
+  }
+  
