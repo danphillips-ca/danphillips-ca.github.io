@@ -19,32 +19,6 @@ h1 {
     font-weight: 500;
 }
 
-
-.btn-outline-primary {
---bs-btn-color: #363636;
---bs-btn-border-color: #ccc;
---bs-btn-hover-color: #fff;
---bs-btn-hover-bg: #363636;
---bs-btn-hover-border-color: #363636;
-}
-
-.home-image {
-    background: url('/images/danphillips.webp') no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-position: calc(50% - 200), calc(50% - 500px);
-}
-
-.full-height {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 #backButton {
     position: fixed;
     background: white;
@@ -52,40 +26,3 @@ h1 {
     right: 20px;
     z-index: 1000;
 }
-
-
-.btn-red:hover, .btn-red:active {
-    background-color: #ff69b4;
-    color: white;
-  }
-  
-  .btn-blue:hover, .btn-blue:active {
-    background-color: #1081F6;
-    color: white;
-  }
-  
-  .btn-green:hover, .btn-green:active {
-    background-color: #A6CE39;
-    color: white;
-  }
-  
-  .btn-purple:hover, .btn-purple:active {
-    background-color: #4c368c;
-    color: white;
-  }
-  
-  @media (min-width: 768px) {
-    .rounded-md-top-left {
-      border-top-left-radius: .25rem !important;
-    }
-    .rounded-md-top-right {
-      border-top-right-radius: .25rem !important;
-    }
-    .rounded-md-bottom-left {
-      border-bottom-left-radius: .25rem !important;
-    }
-    .rounded-md-bottom-right {
-      border-bottom-right-radius: .25rem !important;
-    }
-  }
-  
