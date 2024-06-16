@@ -64,7 +64,9 @@
         }
 
         .home-image {
-            background: url('/images/danphillips.webp') no-repeat;
+            background: url('/images/danphillips.webp') no-repeat; 
+            background-position: 60% 20%; /* Adjust these values to focus on the specific object */
+            background-size: cover;
         }
 
         .full-height {
@@ -75,7 +77,7 @@
 
         .card-container {
             margin-bottom: 20px; /* Adjust the value to your desired bottom margin */
-            margin-top: auto;
+            flex-grow: 1;
             display: flex;
             align-items: center;
         }
@@ -131,7 +133,7 @@
 
 <body class="home-image">
     <div class="container full-height d-flex flex-column">
-        <div class="row card-container">
+        <div class="row card-container flex-grow-1 d-flex align-items-center">
             <div class="card col-xl-5 col-12 p-0">
                 <h1 class="card-header">Hi! I'm Dan.</h1>
                 <div class="card-body">
