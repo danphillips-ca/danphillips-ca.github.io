@@ -52,6 +52,17 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         .home-image {
             background: url('/images/danphillips.webp') no-repeat;
         }
@@ -62,11 +73,22 @@
             flex-direction: column;
         }
 
+        .card-container {
+            margin-bottom: 20px; /* Adjust the value to your desired bottom margin */
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .card {
+            margin: 0 auto; /* Center the card horizontally */
+        }
+
         .btn-outline {
             --bs-btn-color: #363636;
             --bs-btn-border-color: #ccc;
         }
-        
+
         .btn-red:hover {
             background-color: #ff69b4;
             color: white;
@@ -108,17 +130,13 @@
 </head>
 
 <body class="home-image">
-    <div class="container full-height">
-        <div class="row mb-5 mt-auto">
+    <div class="container full-height d-flex flex-column">
+        <div class="row card-container flex-grow-1 d-flex align-items-center">
             <div class="card col-xl-5 col-12 p-0">
                 <h1 class="card-header">Hi! I'm Dan.</h1>
                 <div class="card-body">
-                    <p>
-                        I have been a public servant, an educator, an administrator, a non-profit board member, and a consultant to industry. I have touched sectors in health, oceans, technology, tourism, and faith.
-                    </p>
-                    <p>
-                        This website is a personal portfolio and place to flesh out my thoughts.
-                    </p>
+                    <p>I have been a public servant, an educator, an administrator, a non-profit board member, and a consultant to industry. I have touched sectors in health, oceans, technology, tourism, and faith.</p>
+                    <p>This website is a personal portfolio and place to flesh out my thoughts.</p>
                 </div>
                 <div class="card-footer d-flex flex-wrap" aria-label="Related Pages">
                     <a href="https://trivia.danphillips.ca#" class="btn btn-outline text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-top-left btn-red" aria-label="Toys">
