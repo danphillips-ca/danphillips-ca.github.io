@@ -46,7 +46,69 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-   
+
+<style>
+.home-image {
+    background: url('/images/danphillips.webp') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-position: calc(50% - 200), calc(50% - 500px);
+}
+
+.full-height {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-outline {
+--bs-btn-color: #363636;
+--bs-btn-border-color: #ccc;
+--bs-btn-hover-color: #fff;
+--bs-btn-hover-bg: #363636;
+--bs-btn-hover-border-color: #363636;
+}
+
+.btn-red:hover, .btn-red:active {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .btn-blue:hover, .btn-blue:active {
+    background-color: #1081F6;
+    color: white;
+  }
+  
+  .btn-green:hover, .btn-green:active {
+    background-color: #A6CE39;
+    color: white;
+  }
+  
+  .btn-purple:hover, .btn-purple:active {
+    background-color: #4c368c;
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .rounded-md-top-left {
+      border-top-left-radius: .25rem !important;
+    }
+    .rounded-md-top-right {
+      border-top-right-radius: .25rem !important;
+    }
+    .rounded-md-bottom-left {
+      border-bottom-left-radius: .25rem !important;
+    }
+    .rounded-md-bottom-right {
+      border-bottom-right-radius: .25rem !important;
+    }
+  }
+</style>
+
 </head>
 
 <body class="home-image">
@@ -63,16 +125,16 @@
                     </p>
                 </div>
                 <div class="card-footer d-flex flex-wrap" aria-label="Related Pages">
-                    <a href="https://trivia.danphillips.ca#" class="btn btn-outline-primary text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-top-left btn-red">
+                    <a href="https://trivia.danphillips.ca#" class="btn btn-outline text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-top-left btn-red">
                         <i class="fa-solid fa-chess mx-2"></i>Toys
                     </a>
-                    <a href="https://bsky.app/profile/danphillips.ca" class="btn btn-outline-primary text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-top-right btn-blue">
+                    <a href="https://bsky.app/profile/danphillips.ca" class="btn btn-outline text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-top-right btn-blue">
                         <i class="fa-brands fa-bluesky mx-2"></i>danphillips.ca
                     </a>
-                    <a href="https://orcid.org/0000-0002-0386-0132" class="btn btn-outline-primary text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-bottom-left btn-green">
+                    <a href="https://orcid.org/0000-0002-0386-0132" class="btn btn-outline text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-bottom-left btn-green">
                         <i class="fa-brands fa-orcid mx-2"></i>0000-0002-0386-0132
                     </a>
-                    <a href="/vita.html" class="btn btn-outline-primary text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-bottom-right btn-purple">
+                    <a href="/vita.html" class="btn btn-outline text-center col-12 mb-3 mb-md-0 col-md-6 rounded-0 rounded-md-bottom-right btn-purple">
                         <i class="fa-solid fa-file mx-2"></i>CV
                     </a>
                 </div>
